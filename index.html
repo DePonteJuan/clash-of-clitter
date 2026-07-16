@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Clash of Critters — Planeador de evoluciones</title>
+    <meta
+      name="description"
+      content="Planea el orden de evoluciones de tus Tatari. Datos del wiki, progreso guardado en tu navegador."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,550;9..144,650&family=Nunito:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div
+      id="app-loader"
+      class="app-loader notranslate"
+      role="status"
+      aria-live="polite"
+      aria-busy="true"
+    >
+      <div class="app-loader-card">
+        <div class="app-loader-spin" aria-hidden="true"></div>
+        <p class="app-loader-title" data-i18n="loadingTitle">Cargando…</p>
+        <p class="app-loader-status" id="loader-status" data-i18n="loadingData">
+          Preparando datos del wiki
+        </p>
+      </div>
+    </div>
+    <div class="shell is-booting" id="app-shell">
+      <header class="hero">
+        <div class="hero-top">
+          <div class="hero-copy">
+            <h1 data-i18n="brand">Clash of Critters</h1>
+            <p data-i18n="heroSub">
+              Planeador de evoluciones Tatari: marca lo que tienes, mira qué falta
+              para el siguiente nivel y ordena tus prioridades.
+            </p>
+            <p class="sync">
+              <span data-i18n="wikiUpdated">Datos del wiki actualizados:</span>
+              <strong id="sync-date">…</strong>
+            </p>
+          </div>
+          <div class="lang-box notranslate">
+            <label class="lang-label">
+              <span data-i18n="langLabel">Idioma</span>
+              <select id="lang-select" aria-label="Language"></select>
+            </label>
+            <div
+              id="google-translate-wrap"
+              class="google-translate-wrap notranslate"
+              hidden
+            >
+              <p class="lang-hint" data-i18n="moreLangsHint">
+                Los trials del wiki se traducen solos en Español/Português. Usa
+                esto para otros idiomas.
+              </p>
+              <div class="gt-search">
+                <input
+                  type="search"
+                  id="gt-lang-input"
+                  data-i18n-placeholder="searchLang"
+                  placeholder="Buscar idioma…"
+                  autocomplete="off"
+                  spellcheck="false"
+                  aria-autocomplete="list"
+                  aria-controls="gt-lang-list"
+                />
+                <ul id="gt-lang-list" class="gt-lang-list" role="listbox" hidden></ul>
+              </div>
+              <div id="google_translate_element" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <nav class="tabs" role="tablist" data-i18n-aria="views" aria-label="Vistas">
+        <button
+          type="button"
+          class="tab is-active"
+          role="tab"
+          id="tab-catalog"
+          aria-selected="true"
+          aria-controls="panel-catalog"
+          data-tab="catalog"
+          data-i18n="tabCatalog"
+        >
+          Catálogo
+        </button>
+        <button
+          type="button"
+          class="tab"
+          role="tab"
+          id="tab-planned"
+          aria-selected="false"
+          aria-controls="panel-planned"
+          data-tab="planned"
+        >
+          <span data-i18n="tabPlanned">Planeados</span>
+          <span class="tab-count" id="plan-count">0</span>
+        </button>
+      </nav>
+
+      <section
+        id="panel-catalog"
+        class="tab-panel is-active"
+        role="tabpanel"
+        aria-labelledby="tab-catalog"
+      >
+        <div class="toolbar">
+          <div class="filters">
+            <label class="filter-search">
+              <span data-i18n="search">Buscar</span>
+              <input
+                id="filter-search"
+                type="search"
+                data-i18n-placeholder="searchPlaceholder"
+                placeholder="Sealing, Frostnip…"
+                autocomplete="off"
+              />
+            </label>
+
+            <div class="filter-row">
+              <span class="filter-row-label" data-i18n="type">Tipo</span>
+              <div
+                class="chip-picker"
+                id="filter-type-picker"
+                role="listbox"
+                data-i18n-aria="type"
+                aria-label="Filtrar por tipo"
+              ></div>
+            </div>
+
+            <div class="filter-row">
+              <span class="filter-row-label" data-i18n="role">Rol</span>
+              <div
+                class="chip-picker"
+                id="filter-role-picker"
+                role="listbox"
+                data-i18n-aria="role"
+                aria-label="Filtrar por rol"
+              ></div>
+            </div>
+
+            <div class="filter-secondary">
+              <label>
+                <span data-i18n="rarity">Rareza base</span>
+                <select id="filter-rarity"></select>
+              </label>
+              <label>
+                <span data-i18n="ownership">Posesión</span>
+                <select id="filter-owned">
+                  <option value="all" data-i18n="ownershipAll">Todas</option>
+                  <option value="yes" data-i18n="ownershipYes">Las que tengo</option>
+                  <option value="no" data-i18n="ownershipNo">Las que no tengo</option>
+                </select>
+              </label>
+              <label>
+                <span data-i18n="sort">Orden</span>
+                <select id="filter-sort">
+                  <option value="name" data-i18n="sortName">Nombre A–Z</option>
+                  <option value="stars-desc" data-i18n="sortStarsDesc">Estrellas ↓</option>
+                  <option value="stars-asc" data-i18n="sortStarsAsc">Estrellas ↑</option>
+                </select>
+              </label>
+              <label class="check-inline">
+                <input id="filter-ready" type="checkbox" />
+                <span data-i18n="readyOnly">Solo listos</span>
+              </label>
+            </div>
+          </div>
+          <div class="toolbar-foot">
+            <span id="result-count"></span>
+            <div class="actions">
+              <button type="button" class="btn" id="btn-stars-wizard-catalog" data-i18n="updateStarsView">
+                Actualizar estrellas (vista)
+              </button>
+              <button type="button" class="btn" id="btn-own-all" data-i18n="ownAll">
+                Tengo todos
+              </button>
+              <button type="button" class="btn ghost" id="btn-export" data-i18n="exportProgress">
+                Exportar progreso
+              </button>
+              <button type="button" class="btn ghost" id="btn-import" data-i18n="import">
+                Importar
+              </button>
+              <input
+                id="import-file"
+                type="file"
+                accept="application/json,.json"
+                hidden
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="line-list" class="line-list" aria-live="polite"></div>
+      </section>
+
+      <section
+        id="panel-planned"
+        class="tab-panel"
+        role="tabpanel"
+        aria-labelledby="tab-planned"
+        hidden
+      >
+        <div class="planned-bar">
+          <p class="planned-intro" data-i18n="plannedIntro">
+            Lo que quieres mejorar y qué te falta para la siguiente evolución.
+          </p>
+          <button type="button" class="btn" id="btn-stars-wizard" data-i18n="updateStars">
+            Actualizar estrellas
+          </button>
+        </div>
+        <div id="plan-list" class="plan-list"></div>
+      </section>
+
+      <p class="footer-note">
+        <span data-i18n="footerWiki">Datos desde</span>
+        <a href="https://clashofcritters.wiki.gg/wiki/Tatari" rel="noopener"
+          >clashofcritters.wiki.gg</a
+        >.
+        <span data-i18n="footerLocal"
+          >Tu progreso se guarda solo en este navegador (localStorage), sin
+          servidor.</span
+        >
+      </p>
+    </div>
+
+    <dialog id="detail-modal" class="detail-modal">
+      <div class="detail-sheet">
+        <button
+          type="button"
+          class="detail-close"
+          id="detail-close"
+          data-i18n-aria="close"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+        <div id="detail-body"></div>
+      </div>
+    </dialog>
+
+    <dialog id="stars-wizard" class="wizard-modal">
+      <div class="wizard-sheet">
+        <button
+          type="button"
+          class="detail-close"
+          id="wizard-close"
+          data-i18n-aria="close"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+        <div id="wizard-body"></div>
+      </div>
+    </dialog>
+
+    <script type="module" src="./js/app.js"></script>
+    <script>
+      function googleTranslateElementInit() {
+        if (!window.google?.translate?.TranslateElement) return;
+        new google.translate.TranslateElement(
+          {
+            // Wiki trials/names are English; source must be "en" so Spanish appears as a target.
+            pageLanguage: "en",
+            autoDisplay: false,
+          },
+          "google_translate_element"
+        );
+        window.dispatchEvent(new Event("google-translate-ready"));
+      }
+    </script>
+    <script
+      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+      defer
+    ></script>
+  </body>
+</html>

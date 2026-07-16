@@ -1,0 +1,3071 @@
+{
+  "updatedAt": "2026-07-15T16:46:04Z",
+  "source": "https://clashofcritters.wiki.gg",
+  "lineCount": 63,
+  "lines": [
+    {
+      "id": "Ashlarva",
+      "type": "Fire",
+      "role": "Healer",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Ashlarva",
+          "rarity": "Purple",
+          "image": "Ashlarva.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ashlarva.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ashlarva",
+          "evolvesTo": "Firecoil",
+          "starsRequired": 6,
+          "trials": [
+            "Use Rubblet and Ashlarva on the same team to clear 10 stages."
+          ]
+        },
+        {
+          "name": "Firecoil",
+          "rarity": "Gold",
+          "image": "Firecoil.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Firecoil.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Firecoil",
+          "evolvesTo": "Charflutter",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Firecoil to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Charflutter",
+          "rarity": "Red",
+          "image": "Charflutter.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Charflutter.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Charflutter",
+          "evolvesTo": "Chrysolaria",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "In Island Gold Rush use 20,000 energy drinks.",
+            "Own 24-star Fire Tatari x3."
+          ]
+        },
+        {
+          "name": "Chrysolaria",
+          "rarity": "Rainbow",
+          "image": "Chrysolaria.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Chrysolaria.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Chrysolaria",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Blowfin",
+      "type": "Fire",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Blowfin",
+          "rarity": "Purple",
+          "image": "Blowfin.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Blowfin.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Blowfin",
+          "evolvesTo": "Puffbelly",
+          "starsRequired": 6,
+          "trials": [
+            "Craft 3 Bento(s) at the Bento Maker. Become a master chef!"
+          ]
+        },
+        {
+          "name": "Puffbelly",
+          "rarity": "Gold",
+          "image": "Puffbelly.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Puffbelly.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Puffbelly",
+          "evolvesTo": "Chefugu",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Puffbelly to increase stats 3 time(s).",
+            "In Island Goldrush, use Energy Drink x5,000."
+          ]
+        },
+        {
+          "name": "Chefugu",
+          "rarity": "Red",
+          "image": "Chefugu.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Chefugu.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Chefugu",
+          "evolvesTo": "Pyromaki",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "???"
+          ]
+        },
+        {
+          "name": "Pyromaki",
+          "rarity": "Rainbow",
+          "image": "Pyromaki.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyromaki.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyromaki",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Blueflick",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Blueflick",
+          "rarity": "Purple",
+          "image": "Blueflick.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Blueflick.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Blueflick",
+          "evolvesTo": "Ignisnap",
+          "starsRequired": 3,
+          "trials": [
+            "Shoot 1,000 pinballs."
+          ]
+        },
+        {
+          "name": "Ignisnap",
+          "rarity": "Gold",
+          "image": "Ignisnap.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ignisnap.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ignisnap",
+          "evolvesTo": "Azurion",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Ignisnap to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon (use x2000 boards) Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Azurion",
+          "rarity": "Red",
+          "image": "Azurion.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Azurion.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Azurion",
+          "evolvesTo": "Newflamander",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "In Island Goldrush, use Energy Drink x20,000.",
+            "Shoot 40,000 pinballs."
+          ]
+        },
+        {
+          "name": "Newflamander",
+          "rarity": "Rainbow",
+          "image": "Newflamander.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Newflamander.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Newflamander",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Buddi",
+      "type": "Grass",
+      "role": "Healer",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Buddi",
+          "rarity": "Purple",
+          "image": "Buddi.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Buddi.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Buddi",
+          "evolvesTo": "Sunfleur",
+          "starsRequired": 6,
+          "trials": [
+            "Harvest 800 pinballs from pinball trees. Money can fall from trees after all!"
+          ]
+        },
+        {
+          "name": "Sunfleur",
+          "rarity": "Gold",
+          "image": "Sunfleur.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sunfleur.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sunfleur",
+          "evolvesTo": "Solaflora",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sunfleur to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Solaflora",
+          "rarity": "Red",
+          "image": "Solaflora.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Solaflora.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Solaflora",
+          "evolvesTo": "Heliabloom",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Purchase any 20 buildings. Bring your Camp to life!"
+          ]
+        },
+        {
+          "name": "Heliabloom",
+          "rarity": "Rainbow",
+          "image": "Heliabloom.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Heliabloom.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Heliabloom",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Cactobud",
+      "type": "Grass",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Cactobud",
+          "rarity": "Purple",
+          "image": "Cactobud.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cactobud.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cactobud",
+          "evolvesTo": "Cactobloom",
+          "starsRequired": 6,
+          "trials": [
+            "Bring Cactobud to Horde Invasion 3 times. Hug a Zobo today!"
+          ]
+        },
+        {
+          "name": "Cactobloom",
+          "rarity": "Gold",
+          "image": "Cactobloom.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cactobloom.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cactobloom",
+          "evolvesTo": "Cactoczar",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Cactobloom to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Cactoczar",
+          "rarity": "Red",
+          "image": "Cactoczar.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cactoczar.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cactoczar",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Capywata",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Capywata",
+          "rarity": "Blue",
+          "image": "Capywata.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Capywata.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Capywata",
+          "evolvesTo": "Capypapa",
+          "starsRequired": 4,
+          "trials": []
+        },
+        {
+          "name": "Capypapa",
+          "rarity": "Blue",
+          "image": "Capypapa.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Capypapa.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Capypapa",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Cheerling",
+      "type": "Lightning",
+      "role": "Support",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Cheerling",
+          "rarity": "Purple",
+          "image": "Cheerling.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cheerling.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cheerling",
+          "evolvesTo": "Cheerlet",
+          "starsRequired": 6,
+          "trials": [
+            "Land 10 pinballs in the Star Slot."
+          ]
+        },
+        {
+          "name": "Cheerlet",
+          "rarity": "Gold",
+          "image": "Cheerlet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cheerlet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cheerlet",
+          "evolvesTo": "Cheerspring",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Cheerlet to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ]
+        },
+        {
+          "name": "Cheerspring",
+          "rarity": "Red",
+          "image": "Cheerspring.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cheerspring.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cheerspring",
+          "evolvesTo": "Cheerstella",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Marathon Party (Use x6000 skateboards) or Fishing Contest (Use x6000 Fishing Rods).",
+            "Feed Cheerspring x15 Tempura Plates."
+          ]
+        },
+        {
+          "name": "Cheerstella",
+          "rarity": "Rainbow",
+          "image": "Cheerstella.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cheerstella.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cheerstella",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Cindermunk",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Cindermunk",
+          "rarity": "Blue",
+          "image": "Cindermunk.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cindermunk.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cindermunk",
+          "evolvesTo": "Embertail",
+          "starsRequired": 4,
+          "trials": []
+        },
+        {
+          "name": "Embertail",
+          "rarity": "Blue",
+          "image": "Embertail.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Embertail.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Embertail",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Clucky",
+      "type": "Grass",
+      "role": "Healer",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Clucky",
+          "rarity": "Blue",
+          "image": "Clucky.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Clucky.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Clucky",
+          "evolvesTo": "Cluckeroo",
+          "starsRequired": 4,
+          "trials": []
+        },
+        {
+          "name": "Cluckeroo",
+          "rarity": "Blue",
+          "image": "Cluckeroo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cluckeroo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cluckeroo",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Cribbler",
+      "type": "Water",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Cribbler",
+          "rarity": "Purple",
+          "image": "Cribbler.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cribbler.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cribbler",
+          "evolvesTo": "Clawzor",
+          "starsRequired": 6,
+          "trials": [
+            "In Horde Invasion, upgrade Cribbler to Lvl 5 or above for a total of 1 time(s)."
+          ]
+        },
+        {
+          "name": "Clawzor",
+          "rarity": "Gold",
+          "image": "Clawzor.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Clawzor.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Clawzor",
+          "evolvesTo": "Dreadclaw",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Clawzor to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)."
+          ]
+        },
+        {
+          "name": "Dreadclaw",
+          "rarity": "Red",
+          "image": "Dreadclaw.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dreadclaw.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dreadclaw",
+          "evolvesTo": "Cribking",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use x6000 fishing rods) or Zobo Shooter (use x1,200,000 bullet coints).",
+            "Obtain 50 more Tatari Wishboxes."
+          ]
+        },
+        {
+          "name": "Cribking",
+          "rarity": "Rainbow",
+          "image": "Cribking.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cribking.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cribking",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Dewgrub",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Dewgrub",
+          "rarity": "Purple",
+          "image": "Dewgrub.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dewgrub.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dewgrub",
+          "evolvesTo": "Ripplewing",
+          "starsRequired": 6,
+          "trials": [
+            "Clear 10 stages with Dewgrub and Ashlarva together."
+          ]
+        },
+        {
+          "name": "Ripplewing",
+          "rarity": "Gold",
+          "image": "Ripplewing.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ripplewing.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ripplewing",
+          "evolvesTo": "Waveflutter",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Ripplewing to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)"
+          ]
+        },
+        {
+          "name": "Waveflutter",
+          "rarity": "Red",
+          "image": "Waveflutter.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Waveflutter.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Waveflutter",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Dozy",
+      "type": "Rock",
+      "role": "Tank",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Dozy",
+          "rarity": "Blue",
+          "image": "Dozy.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dozy.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dozy",
+          "evolvesTo": "Snoozebo",
+          "starsRequired": 4,
+          "trials": []
+        },
+        {
+          "name": "Snoozebo",
+          "rarity": "Purple",
+          "image": "Snoozebo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Snoozebo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Snoozebo",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Drilleroo",
+      "type": "Rock",
+      "role": "Specialist",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Drilleroo",
+          "rarity": "Purple",
+          "image": "Drilleroo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Drilleroo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Drilleroo",
+          "evolvesTo": "Cragolin",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Drilleroo Gem Taco x3."
+          ]
+        },
+        {
+          "name": "Cragolin",
+          "rarity": "Gold",
+          "image": "Cragolin.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cragolin.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cragolin",
+          "evolvesTo": "Borelord",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Cragolin to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use fertilizer x4200)."
+          ]
+        },
+        {
+          "name": "Borelord",
+          "rarity": "Red",
+          "image": "Borelord.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Borelord.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Borelord",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Droppit",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Droppit",
+          "rarity": "Purple",
+          "image": "Droppit.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Droppit.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Droppit",
+          "evolvesTo": "Bubbit",
+          "starsRequired": 6,
+          "trials": [
+            "Obtain Droppit x1 to have a bunny party!"
+          ]
+        },
+        {
+          "name": "Bubbit",
+          "rarity": "Gold",
+          "image": "Bubbit.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Bubbit.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Bubbit",
+          "evolvesTo": "Tideon",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Bubbit to increase stats 3 times",
+            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)"
+          ]
+        },
+        {
+          "name": "Tideon",
+          "rarity": "Red",
+          "image": "Tideon.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Tideon.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Tideon",
+          "evolvesTo": "Haplysia",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use x6000 fishing rods) or Zobo Shooter (use x1,200,000 bullet coins).",
+            "Obtain 60 cards from card packs."
+          ]
+        },
+        {
+          "name": "Haplysia",
+          "rarity": "Rainbow",
+          "image": "Haplysia.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Haplysia.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Haplysia",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Dumbopus",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Dumbopus",
+          "rarity": "Purple",
+          "image": "Dumbopus.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dumbopus.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dumbopus",
+          "evolvesTo": "Dazopus",
+          "starsRequired": 6,
+          "trials": [
+            "In Tatari Catcher, capture 40 Tatari."
+          ]
+        },
+        {
+          "name": "Dazopus",
+          "rarity": "Gold",
+          "image": "Dazopus.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dazopus.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dazopus",
+          "evolvesTo": "Fishopus",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Dazopus to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Zobo Shooter (use x400,000 bullet coins)."
+          ]
+        },
+        {
+          "name": "Fishopus",
+          "rarity": "Red",
+          "image": "Fishopus.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Fishopus.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Fishopus",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Flameow",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Flameow",
+          "rarity": "Purple",
+          "image": "Flameow.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Flameow.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Flameow",
+          "evolvesTo": "Nekoflare",
+          "starsRequired": 6,
+          "trials": [
+            "Clear 10 stages with Flameow and Kittazap together."
+          ]
+        },
+        {
+          "name": "Nekoflare",
+          "rarity": "Gold",
+          "image": "Nekoflare.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Nekoflare.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Nekoflare",
+          "evolvesTo": "Silversear",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Nekoflare to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Silversear",
+          "rarity": "Red",
+          "image": "Silversear.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Silversear.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Silversear",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Fluffle",
+      "type": "Lightning",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Fluffle",
+          "rarity": "Purple",
+          "image": "Fluffle.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Fluffle.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Fluffle",
+          "evolvesTo": "Nimbuzzy",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Fluffle Fluff Candy x3."
+          ]
+        },
+        {
+          "name": "Nimbuzzy",
+          "rarity": "Gold",
+          "image": "Nimbuzzy.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Nimbuzzy.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Nimbuzzy",
+          "evolvesTo": "Galewether",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Nimbuzzy to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ]
+        },
+        {
+          "name": "Galewether",
+          "rarity": "Red",
+          "image": "Galewether.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Galewether.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Galewether",
+          "evolvesTo": "Cosmoram",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Snowboard Sprint/Marathon Party (use x6000 boards) or Fishing Contest (use x6000 fishing rods).",
+            "Feed 60 Fluff Candy."
+          ]
+        },
+        {
+          "name": "Cosmoram",
+          "rarity": "Rainbow",
+          "image": "Cosmoram.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cosmoram.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cosmoram",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Frostnip",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Frostnip",
+          "rarity": "Purple",
+          "image": "Frostnip.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frostnip.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frostnip",
+          "evolvesTo": "Frostpaw",
+          "starsRequired": 3,
+          "trials": [
+            "Defeat 300 Zobos while clearing stages."
+          ]
+        },
+        {
+          "name": "Frostpaw",
+          "rarity": "Gold",
+          "image": "Frostpaw.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frostpaw.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frostpaw",
+          "evolvesTo": "Frostique",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Frostpaw to increase stats 3 times.",
+            "Clear Chapter 8, Stage 80."
+          ]
+        },
+        {
+          "name": "Frostique",
+          "rarity": "Red",
+          "image": "Frostique.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frostique.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frostique",
+          "evolvesTo": "Frostluna",
+          "starsRequired": 24,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards).",
+            "Own 24-Star Water Tatari x3."
+          ]
+        },
+        {
+          "name": "Frostluna",
+          "rarity": "Purple",
+          "image": "Frostluna.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frostluna.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frostluna",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Frugling",
+      "type": "Grass",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Frugling",
+          "rarity": "Purple",
+          "image": "Frugling.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frugling.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frugling",
+          "evolvesTo": "Frugatoad",
+          "starsRequired": 3,
+          "trials": [
+            "Shoot 400 pinballs."
+          ]
+        },
+        {
+          "name": "Frugatoad",
+          "rarity": "Gold",
+          "image": "Frugatoad.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frugatoad.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frugatoad",
+          "evolvesTo": "Frugagon",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Frugatoad to increase stats 3 times.",
+            "Reach difficulty 12 in any boss challenge."
+          ]
+        },
+        {
+          "name": "Frugagon",
+          "rarity": "Red",
+          "image": "Frugagon.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frugagon.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frugagon",
+          "evolvesTo": "Frugantuan",
+          "starsRequired": 24,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Obtain 30 more Tatari Wishboxes."
+          ]
+        },
+        {
+          "name": "Frugantuan",
+          "rarity": "Rainbow",
+          "image": "Frugantuan.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Frugantuan.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Frugantuan",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Fumekit",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Fumekit",
+          "rarity": "Purple",
+          "image": "Fumekit.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Fumekit.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Fumekit",
+          "evolvesTo": "Sulfunk",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Fumekit Cookie x30."
+          ]
+        },
+        {
+          "name": "Sulfunk",
+          "rarity": "Gold",
+          "image": "Sulfunk.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sulfunk.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sulfunk",
+          "evolvesTo": "Magmusk",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sulfunk to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Magmusk",
+          "rarity": "Red",
+          "image": "Magmusk.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Magmusk.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Magmusk",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Funglet",
+      "type": "Grass",
+      "role": "Support",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Funglet",
+          "rarity": "Purple",
+          "image": "Funglet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Funglet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Funglet",
+          "evolvesTo": "Trippet",
+          "starsRequired": 6,
+          "trials": [
+            "Log in for 2 days in a row."
+          ]
+        },
+        {
+          "name": "Trippet",
+          "rarity": "Gold",
+          "image": "Trippet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Trippet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Trippet",
+          "evolvesTo": "Hyphoria",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Trippet to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Hyphoria",
+          "rarity": "Red",
+          "image": "Hyphoria.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hyphoria.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hyphoria",
+          "evolvesTo": "Ecstamira",
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "TBA"
+          ]
+        },
+        {
+          "name": "Ecstamira",
+          "rarity": "Rainbow",
+          "image": "Ecstamira.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ecstamira.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ecstamira",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Gibber",
+      "type": "Rock",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Gibber",
+          "rarity": "Purple",
+          "image": "Gibber.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Gibber.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Gibber",
+          "evolvesTo": "Turtuff",
+          "starsRequired": 6,
+          "trials": [
+            "Obtain 5 Shields via pinball."
+          ]
+        },
+        {
+          "name": "Turtuff",
+          "rarity": "Gold",
+          "image": "Turtuff.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Turtuff.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Turtuff",
+          "evolvesTo": "Rockshell",
+          "starsRequired": 12,
+          "trials": [
+            "Feed Turtuff to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Rockshell",
+          "rarity": "Red",
+          "image": "Rockshell.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rockshell.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rockshell",
+          "evolvesTo": "Terraton",
+          "starsRequired": 24,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Treasure Hunt (dig up 120 treasure) or Cozy Farm (use x7200 fertilizer).",
+            "Own 5 Rock Badges."
+          ]
+        },
+        {
+          "name": "Terraton",
+          "rarity": "Rainbow",
+          "image": "Terraton.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Terraton.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Terraton",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Glowfly",
+      "type": "Lightning",
+      "role": "Healer",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Glowfly",
+          "rarity": "Purple",
+          "image": "Glowfly.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Glowfly.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Glowfly",
+          "evolvesTo": "Phosflare",
+          "starsRequired": 6,
+          "trials": [
+            "Land 20 pinballs in the Star Slot."
+          ]
+        },
+        {
+          "name": "Phosflare",
+          "rarity": "Gold",
+          "image": "Phosflare.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Phosflare.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Phosflare",
+          "evolvesTo": "Glimmerwing",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Phosflare to increase stats 3 times.",
+            "Play Marathon Party (use skateboard x2000) or Fishing Contest (use Fishing Rod 2000x)."
+          ]
+        },
+        {
+          "name": "Glimmerwing",
+          "rarity": "Red",
+          "image": "Glimmerwing.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Glimmerwing.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Glimmerwing",
+          "evolvesTo": "Luminastra",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "??"
+          ]
+        },
+        {
+          "name": "Luminastra",
+          "rarity": "Rainbow",
+          "image": "Luminastra.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Luminastra.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Luminastra",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Goonbug",
+      "type": "Grass",
+      "role": "Specialist",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Goonbug",
+          "rarity": "Purple",
+          "image": "Goonbug.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Goonbug.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Goonbug",
+          "evolvesTo": "Capobeetle",
+          "starsRequired": 6,
+          "trials": [
+            "Attempt Boss Challenge 10 times."
+          ]
+        },
+        {
+          "name": "Capobeetle",
+          "rarity": "Gold",
+          "image": "Capobeetle.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Capobeetle.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Capobeetle",
+          "evolvesTo": "Donscarab",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Capobeetle to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Donscarab",
+          "rarity": "Red",
+          "image": "Donscarab.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Donscarab.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Donscarab",
+          "evolvesTo": "Beetleknight",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Feed Donscarab Bamboo Stew x15."
+          ]
+        },
+        {
+          "name": "Beetleknight",
+          "rarity": "Rainbow",
+          "image": "Beetleknight.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Beetleknight.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Beetleknight",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Gopher",
+      "type": "Rock",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Gopher",
+          "rarity": "Purple",
+          "image": "Gopher.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Gopher.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Gopher",
+          "evolvesTo": "Watchroo",
+          "starsRequired": 6,
+          "trials": [
+            "Obtain another Gopher x1"
+          ]
+        },
+        {
+          "name": "Watchroo",
+          "rarity": "Gold",
+          "image": "Watchroo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Watchroo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Watchroo",
+          "evolvesTo": "Bastogard",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Watchroo to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Bastogard",
+          "rarity": "Red",
+          "image": "Bastogard.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Bastogard.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Bastogard",
+          "evolvesTo": "Cratzar",
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "Play Treasure Hunt (dig up 120 treasure) or Cozy Farm (use x7200 fertilizer).",
+            "Obtain 50 more Tatari Wishboxes."
+          ]
+        },
+        {
+          "name": "Cratzar",
+          "rarity": "Rainbow",
+          "image": "Cratzar.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cratzar.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cratzar",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Hootlet",
+      "type": "Grass",
+      "role": "Support",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Hootlet",
+          "rarity": "Purple",
+          "image": "Hootlet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hootlet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hootlet",
+          "evolvesTo": "Tikowl",
+          "starsRequired": 6,
+          "trials": [
+            "Log in for 2 days in a row."
+          ]
+        },
+        {
+          "name": "Tikowl",
+          "rarity": "Gold",
+          "image": "Tikowl.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Tikowl.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Tikowl",
+          "evolvesTo": "Chronerva",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Tikowl to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Chronerva",
+          "rarity": "Red",
+          "image": "Chronerva.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Chronerva.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Chronerva",
+          "evolvesTo": "Hypnostrix",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Own 24-Star Grass Tatari x3."
+          ]
+        },
+        {
+          "name": "Hypnostrix",
+          "rarity": "Rainbow",
+          "image": "Hypnostrix.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hypnostrix.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hypnostrix",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Humbug",
+      "type": "Rock",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Humbug",
+          "rarity": "Purple",
+          "image": "Humbug.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Humbug.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Humbug",
+          "evolvesTo": "Humbleetle",
+          "starsRequired": 6,
+          "trials": [
+            "Land 10 pinballs in the Star Slot."
+          ]
+        },
+        {
+          "name": "Humbleetle",
+          "rarity": "Gold",
+          "image": "Humbeetle.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Humbeetle.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Humbleetle",
+          "evolvesTo": "Zenscarab",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Humbleetle to increase stats 3 time(s).",
+            "In Island Gold Rush use Energy Drinks x5,000."
+          ]
+        },
+        {
+          "name": "Zenscarab",
+          "rarity": "Red",
+          "image": "Zenscarab.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zenscarab.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zenscarab",
+          "evolvesTo": "Hierotyrus",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B Tier",
+            "Play Treasure Hunt (120 Dig) or Cozy Farm (7200 Fertilizer)",
+            "In Tatari Catcher, capture 200 Tatari. Get new converts!"
+          ]
+        },
+        {
+          "name": "Hierotyrus",
+          "rarity": "Rainbow",
+          "image": "Hierotyrus.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hierotyrus.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hierotyrus",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Joeyo",
+      "type": "Rock",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Joeyo",
+          "rarity": "Purple",
+          "image": "Joeyo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Joeyo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Joeyo",
+          "evolvesTo": "Puncharoo",
+          "starsRequired": 6,
+          "trials": [
+            "Defeat 30 enemies in Island Goldrush. Time for some courage!"
+          ]
+        },
+        {
+          "name": "Puncharoo",
+          "rarity": "Gold",
+          "image": "Puncharoo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Puncharoo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Puncharoo",
+          "evolvesTo": "Kangachamp",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Puncharoo to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Kangachamp",
+          "rarity": "Red",
+          "image": "Kangachamp.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Kangachamp.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Kangachamp",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Kittazap",
+      "type": "Lightning",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Kittazap",
+          "rarity": "Purple",
+          "image": "Kittazap.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Kittazap.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Kittazap",
+          "evolvesTo": "Nekowatt",
+          "starsRequired": 6,
+          "trials": [
+            "Shoot 2,400 pinballs."
+          ]
+        },
+        {
+          "name": "Nekowatt",
+          "rarity": "Gold",
+          "image": "Nekowatt.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Nekowatt.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Nekowatt",
+          "evolvesTo": "Voltazar",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Nekowatt to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)"
+          ]
+        },
+        {
+          "name": "Voltazar",
+          "rarity": "Red",
+          "image": "Voltazar.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltazar.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltazar",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Lollama",
+      "type": "Grass",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Lollama",
+          "rarity": "Purple",
+          "image": "Lollama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lollama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lollama",
+          "evolvesTo": "Slobberlama",
+          "starsRequired": 6,
+          "trials": [
+            "Bring Lollama to Horde Invasion 3 times. Drown those Zobos in slobber!"
+          ]
+        },
+        {
+          "name": "Slobberlama",
+          "rarity": "Gold",
+          "image": "Slobberlama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Slobberlama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Slobberlama",
+          "evolvesTo": "Ptooielama",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Slobberlama to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Ptooielama",
+          "rarity": "Red",
+          "image": "Ptooielama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ptooielama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ptooielama",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Lullelly",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Lullelly",
+          "rarity": "Purple",
+          "image": "Lullelly.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lullelly.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lullelly",
+          "evolvesTo": "Yawnelly",
+          "starsRequired": 6,
+          "trials": [
+            "Purchase any 5 buildings."
+          ]
+        },
+        {
+          "name": "Yawnelly",
+          "rarity": "Gold",
+          "image": "Yawnelly.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Yawnelly.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Yawnelly",
+          "evolvesTo": "Souverelle",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Yawnelly to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)."
+          ]
+        },
+        {
+          "name": "Souverelle",
+          "rarity": "Red",
+          "image": "Souverelle.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Souverelle.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Souverelle",
+          "evolvesTo": "Somnrayna",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "TBA"
+          ]
+        },
+        {
+          "name": "Somnrayna",
+          "rarity": "Rainbow",
+          "image": "Somnrayna.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Somnrayna.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Somnrayna",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Manteeny",
+      "type": "Grass",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Manteeny",
+          "rarity": "Purple",
+          "image": "Manteeny.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Manteeny.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Manteeny",
+          "evolvesTo": "Stalkerix",
+          "starsRequired": 6,
+          "trials": []
+        },
+        {
+          "name": "Stalkerix",
+          "rarity": "Gold",
+          "image": "Stalkerix.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Stalkerix.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Stalkerix",
+          "evolvesTo": "Serrabloom",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Stalkerix to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Serrabloom",
+          "rarity": "Red",
+          "image": "Serrabloom.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Serrabloom.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Serrabloom",
+          "evolvesTo": "Orchitoria",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Own 24-star Grass Tatari x3."
+          ]
+        },
+        {
+          "name": "Orchitoria",
+          "rarity": "Rainbow",
+          "image": "Orchitoria.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Orchitoria.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Orchitoria",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Maskfry",
+      "type": "Water",
+      "role": "Support",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Maskfry",
+          "rarity": "Purple",
+          "image": "Maskfry.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Maskfry.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Maskfry",
+          "evolvesTo": "Ospisces",
+          "starsRequired": 6,
+          "trials": [
+            "Attempt Boss Challenge 10 times."
+          ]
+        },
+        {
+          "name": "Ospisces",
+          "rarity": "Gold",
+          "image": "Ospisces.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ospisces.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ospisces",
+          "evolvesTo": "Armorjaw",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Ospisces to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Zobo Shooter (use x400,000 bullet coins)."
+          ]
+        },
+        {
+          "name": "Armorjaw",
+          "rarity": "Red",
+          "image": "Armorjaw.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Armorjaw.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Armorjaw",
+          "evolvesTo": "Dagondeep",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use x6000 fishing rods) or Zobo Shooter (use x1,200,000 bullet coints).",
+            "Obtain 60 cards from card packs."
+          ]
+        },
+        {
+          "name": "Dagondeep",
+          "rarity": "Rainbow",
+          "image": "Dagondeep.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dagondeep.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dagondeep",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Momopo",
+      "type": "Rock",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Momopo",
+          "rarity": "Purple",
+          "image": "Momopo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Momopo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Momopo",
+          "evolvesTo": "Lulupo",
+          "starsRequired": 6,
+          "trials": [
+            "Feed 10 Rock Sugar Rings."
+          ]
+        },
+        {
+          "name": "Lulupo",
+          "rarity": "Gold",
+          "image": "Lulupo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lulupo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lulupo",
+          "evolvesTo": "Lilypo",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Lulupo to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Lilypo",
+          "rarity": "Red",
+          "image": "Lilypo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lilypo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lilypo",
+          "evolvesTo": "Gemmapo",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Dig 120 treasures in Treasure Hunt or use x7200 fertilizer in Cozy Farm.",
+            "Obtain 60 cards from card packs."
+          ]
+        },
+        {
+          "name": "Gemmapo",
+          "rarity": "Rainbow",
+          "image": "Gemmapo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Gemmapo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Gemmapo",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Mudrump",
+      "type": "Rock",
+      "role": "DPS",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Mudrump",
+          "rarity": "Blue",
+          "image": "Mudrump.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Mudrump.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Mudrump",
+          "evolvesTo": "Rockhog",
+          "starsRequired": 5,
+          "trials": []
+        },
+        {
+          "name": "Rockhog",
+          "rarity": "Purple",
+          "image": "Rockhog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rockhog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rockhog",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Pandaroo",
+      "type": "Grass",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Pandaroo",
+          "rarity": "Purple",
+          "image": "Pandaroo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pandaroo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pandaroo",
+          "evolvesTo": "Pandaroot",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Pandaroo 3 Sunshine Salads."
+          ]
+        },
+        {
+          "name": "Pandaroot",
+          "rarity": "Gold",
+          "image": "Pandaroot.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pandaroot.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pandaroot",
+          "evolvesTo": "Pandarrior",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Pandaroot to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Pandarrior",
+          "rarity": "Red",
+          "image": "Pandarrior.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pandarrior.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pandarrior",
+          "evolvesTo": "Pandagrand",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Feed Pandarrior Bamboo Stew x15"
+          ]
+        },
+        {
+          "name": "Pandagrand",
+          "rarity": "Rainbow",
+          "image": "Pandagrand.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pandagrand.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pandagrand",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Poakie",
+      "type": "Fire",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Poakie",
+          "rarity": "Purple",
+          "image": "Poakie.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Poakie.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Poakie",
+          "evolvesTo": "Sizzribb",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Poakie 10 Spicy Sodas."
+          ]
+        },
+        {
+          "name": "Sizzribb",
+          "rarity": null,
+          "image": "Sizzribb.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sizzribb.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sizzribb",
+          "evolvesTo": "Lickflicker",
+          "starsRequired": null,
+          "trials": []
+        },
+        {
+          "name": "Lickflicker",
+          "rarity": null,
+          "image": "Lickflicker.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lickflicker.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lickflicker",
+          "evolvesTo": "Ignitoad",
+          "starsRequired": null,
+          "trials": []
+        },
+        {
+          "name": "Ignitoad",
+          "rarity": null,
+          "image": "Ignitoad.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ignitoad.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ignitoad",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Punchimp",
+      "type": "Rock",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Punchimp",
+          "rarity": "Purple",
+          "image": "Punchimp.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Punchimp.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Punchimp",
+          "evolvesTo": "Rockfu",
+          "starsRequired": 6,
+          "trials": [
+            "Obtain another Punchimp x1"
+          ]
+        },
+        {
+          "name": "Rockfu",
+          "rarity": "Gold",
+          "image": "Rockfu.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rockfu.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rockfu",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Pyroprawn",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Gold",
+      "stages": [
+        {
+          "name": "Pyroprawn",
+          "rarity": "Gold",
+          "image": "Pyroprawn.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyroprawn.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyroprawn",
+          "evolvesTo": "Pyroclobster",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Pyroprawn to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Pyroclobster",
+          "rarity": "Red",
+          "image": "Pyroclobster.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyroclobster.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyroclobster",
+          "evolvesTo": "Pyroviathan",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality",
+            "Use energy drink x20,000",
+            "In Horde Invasion, upgrade Pyroclobster to Lvl 7 or above for a total of 5 times."
+          ]
+        },
+        {
+          "name": "Pyroviathan",
+          "rarity": "Rainbow",
+          "image": "Pyroviathan.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyroviathan.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyroviathan",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Pyropup",
+      "type": "Fire",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Pyropup",
+          "rarity": "Purple",
+          "image": "Pyropup.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyropup.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyropup",
+          "evolvesTo": "Pyrohound",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Pyropup 30 cookies."
+          ]
+        },
+        {
+          "name": "Pyrohound",
+          "rarity": "Gold",
+          "image": "Pyrohound.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyrohound.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyrohound",
+          "evolvesTo": "Hellhound",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Pyrohound to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Hellhound",
+          "rarity": "Red",
+          "image": "Hellhound.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hellhound.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hellhound",
+          "evolvesTo": "Pyrodaemon",
+          "starsRequired": 30,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "In Island Gold Rush use 20,000 energy drinks.",
+            "Feed 15 Volcano Pizzas."
+          ]
+        },
+        {
+          "name": "Pyrodaemon",
+          "rarity": "Rainbow",
+          "image": "Pyrodaemon.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyrodaemon.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyrodaemon",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Rubblet",
+      "type": "Rock",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Rubblet",
+          "rarity": "Purple",
+          "image": "Rubblet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rubblet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rubblet",
+          "evolvesTo": "Cobbledon",
+          "starsRequired": 6,
+          "trials": [
+            "Kill 300 Zobos while clearing stages. Show them the power of Azure Flare!"
+          ]
+        },
+        {
+          "name": "Cobbledon",
+          "rarity": "Gold",
+          "image": "Cobbledon.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cobbledon.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cobbledon",
+          "evolvesTo": "Rockzilla",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Cobbledon to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Rockzilla",
+          "rarity": "Red",
+          "image": "Rockzilla.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rockzilla.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rockzilla",
+          "evolvesTo": "Meteorax",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B Quality.",
+            "Dig 120 treasures in Treasure Hunt or use x7200 fertilizer in Cozy Farm.",
+            "In Horde Invasion, upgrade Rockzilla to Lvl 7 or above for a total of 5 time(s)."
+          ]
+        },
+        {
+          "name": "Meteorax",
+          "rarity": "Rainbow",
+          "image": "Meteorax.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Meteorax.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Meteorax",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Sackling",
+      "type": "Grass",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Sackling",
+          "rarity": "Purple",
+          "image": "Sackling.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sackling.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sackling",
+          "evolvesTo": "Jarachnid",
+          "starsRequired": 6,
+          "trials": [
+            "Harvest 800 pinballs from pinball trees. Get closer to nature!"
+          ]
+        },
+        {
+          "name": "Jarachnid",
+          "rarity": "Gold",
+          "image": "Jarachnid.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Jarachnid.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Jarachnid",
+          "evolvesTo": "Terracrawler",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Jarachnid to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ]
+        },
+        {
+          "name": "Terracrawler",
+          "rarity": "Red",
+          "image": "Terracrawler.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Terracrawler.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Terracrawler",
+          "evolvesTo": "Weaverfang",
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "Shoot 60,000 pinballs.",
+            "Own 24-star Grass Tatari x4."
+          ]
+        },
+        {
+          "name": "Weaverfang",
+          "rarity": "Rainbow",
+          "image": "Weaverfang.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Weaverfang.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Weaverfang",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Sealing",
+      "type": "Water",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Sealing",
+          "rarity": "Purple",
+          "image": "Sealing.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sealing.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sealing",
+          "evolvesTo": "Sealoon",
+          "starsRequired": 6,
+          "trials": [
+            "Shoot 2,400 pinballs. Get inspired!"
+          ]
+        },
+        {
+          "name": "Sealoon",
+          "rarity": "Gold",
+          "image": "Sealoon.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sealoon.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sealoon",
+          "evolvesTo": "Seaswirl",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sealoon to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)."
+          ]
+        },
+        {
+          "name": "Seaswirl",
+          "rarity": "Red",
+          "image": "Seaswirl.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Seaswirl.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Seaswirl",
+          "evolvesTo": "Sealord",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 40,000 pinballs.",
+            "Play Zobo Shooter (use x1,200,000 bullet coins) or Fishing Contest (use x6000 fishing rods)."
+          ]
+        },
+        {
+          "name": "Sealord",
+          "rarity": "Rainbow",
+          "image": "Sealord.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sealord.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sealord",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Shardsnail",
+      "type": "Rock",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Shardsnail",
+          "rarity": "Purple",
+          "image": "Shardsnail.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Shardsnail.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Shardsnail",
+          "evolvesTo": "Gemsnail",
+          "starsRequired": 6,
+          "trials": [
+            "Obtain 5 shield via pinball."
+          ]
+        },
+        {
+          "name": "Gemsnail",
+          "rarity": "Gold",
+          "image": "Gemsnail.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Gemsnail.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Gemsnail",
+          "evolvesTo": "Jewelsnail",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Gemsnail to increase stats 3 times.",
+            "In Island Gold Rush, use energy drinks x5,000."
+          ]
+        },
+        {
+          "name": "Jewelsnail",
+          "rarity": "Red",
+          "image": "Jewelsnail.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Jewelsnail.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Jewelsnail",
+          "evolvesTo": "Crystalsnail",
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "Play Treasure Hunt (dig up 120 treasure) or Cozy Farm (use x7200 fertilizer).",
+            "Obtain 50 more Tatari Wishboxes."
+          ]
+        },
+        {
+          "name": "Crystalsnail",
+          "rarity": "Rainbow",
+          "image": "Crystalsnail.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Crystalsnail.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Crystalsnail",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Shellshy",
+      "type": "Water",
+      "role": "Guardian",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Shellshy",
+          "rarity": "Blue",
+          "image": "Shellshy.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Shellshy.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Shellshy",
+          "evolvesTo": "Boldclaw",
+          "starsRequired": 6,
+          "trials": []
+        },
+        {
+          "name": "Boldclaw",
+          "rarity": "Blue",
+          "image": "Boldclaw.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Boldclaw.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Boldclaw",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Shrimpyro",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Shrimpyro",
+          "rarity": "Purple",
+          "image": "Shrimpyro.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Shrimpyro.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Shrimpyro",
+          "evolvesTo": "Pyroprawn",
+          "starsRequired": 6,
+          "trials": [
+            "Obtain 800 Energy Drinks via pinball."
+          ]
+        },
+        {
+          "name": "Pyroprawn",
+          "rarity": "Gold",
+          "image": "Pyroprawn.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyroprawn.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyroprawn",
+          "evolvesTo": "Pyroclobster",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Pyroprawn to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Pyroclobster",
+          "rarity": "Red",
+          "image": "Pyroclobster.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyroclobster.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyroclobster",
+          "evolvesTo": "Pyroviathan",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality",
+            "Use energy drink x20,000",
+            "In Horde Invasion, upgrade Pyroclobster to Lvl 7 or above for a total of 5 times."
+          ]
+        },
+        {
+          "name": "Pyroviathan",
+          "rarity": "Rainbow",
+          "image": "Pyroviathan.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pyroviathan.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pyroviathan",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Skinklet",
+      "type": "Water",
+      "role": "Specialist",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Skinklet",
+          "rarity": "Purple",
+          "image": "Skinklet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Skinklet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Skinklet",
+          "evolvesTo": "Skinkoon",
+          "starsRequired": 6,
+          "trials": [
+            "Purchase any 5 buildings. Give Skinklet a hiding spot!"
+          ]
+        },
+        {
+          "name": "Skinkoon",
+          "rarity": "Gold",
+          "image": "Skinkoon.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Skinkoon.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Skinkoon",
+          "evolvesTo": "Ninjaguana",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Skinkoon to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Fishing Contest (use x2000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Ninjaguana",
+          "rarity": "Red",
+          "image": "Ninjaguana.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ninjaguana.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ninjaguana",
+          "evolvesTo": "Hychroma",
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "TBA"
+          ]
+        },
+        {
+          "name": "Hychroma",
+          "rarity": "Rainbow",
+          "image": "Hychroma.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hychroma.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hychroma",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Solpear",
+      "type": "Grass",
+      "role": "Guardian",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Solpear",
+          "rarity": "Blue",
+          "image": "Solpear.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Solpear.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Solpear",
+          "evolvesTo": "Pearpair",
+          "starsRequired": 6,
+          "trials": []
+        },
+        {
+          "name": "Pearpair",
+          "rarity": "Purple",
+          "image": "Pearpair.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Pearpair.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Pearpair",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Souphog",
+      "type": "Fire",
+      "role": "Healer",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Souphog",
+          "rarity": "Purple",
+          "image": "Souphog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Souphog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Souphog",
+          "evolvesTo": "Grillhog",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Souphog Lava Ramen x1, Spicy Soda x1, and Cookie x1"
+          ]
+        },
+        {
+          "name": "Grillhog",
+          "rarity": "Gold",
+          "image": "Grillhog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Grillhog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Grillhog",
+          "evolvesTo": "Hothog",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Grillhog to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Hothog",
+          "rarity": "Red",
+          "image": "Hothog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hothog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hothog",
+          "evolvesTo": "Searhog",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "In Island Gold Rush use 20,000 energy drinks.",
+            "Feed 60 Lava Ramen."
+          ]
+        },
+        {
+          "name": "Searhog",
+          "rarity": "Rainbow",
+          "image": "Searhog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Searhog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Searhog",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Sparkeet",
+      "type": "Lightning",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Sparkeet",
+          "rarity": "Purple",
+          "image": "Sparkeet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sparkeet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sparkeet",
+          "evolvesTo": "Buzzbeak",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Sparkeet Bolt Pudding x10"
+          ]
+        },
+        {
+          "name": "Buzzbeak",
+          "rarity": "Gold",
+          "image": "Buzzbeak.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Buzzbeak.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Buzzbeak",
+          "evolvesTo": "Toucanzam",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Buzzbeak to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x2400 fertilizer)."
+          ]
+        },
+        {
+          "name": "Toucanzam",
+          "rarity": "Red",
+          "image": "Toucanzam.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Toucanzam.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Toucanzam",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Sparkit",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Sparkit",
+          "rarity": "Purple",
+          "image": "Sparkit.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sparkit.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sparkit",
+          "evolvesTo": "Flametail",
+          "starsRequired": 6,
+          "trials": [
+            "Shoot 2,400 pinballs."
+          ]
+        },
+        {
+          "name": "Flametail",
+          "rarity": "Gold",
+          "image": "Firefox.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Firefox.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Flametail",
+          "evolvesTo": "Flarevix",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Flametail to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)"
+          ]
+        },
+        {
+          "name": "Flarevix",
+          "rarity": "Red",
+          "image": "Flarevix.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Flarevix.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Flarevix",
+          "evolvesTo": "Phantifox",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "In Island Gold Rush use 20,000 energy drinks.",
+            "Own 24-star Fire Tatari x3."
+          ]
+        },
+        {
+          "name": "Phantifox",
+          "rarity": "Rainbow",
+          "image": "Phantifox.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Phantifox.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Phantifox",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Sparkrow",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Sparkrow",
+          "rarity": "Blue",
+          "image": "Sparkrow.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sparkrow.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sparkrow",
+          "evolvesTo": "Scorchwing",
+          "starsRequired": 5,
+          "trials": []
+        },
+        {
+          "name": "Scorchwing",
+          "rarity": "Blue",
+          "image": "Scorchwing.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Scorchwing.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Scorchwing",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Synthhog",
+      "type": "Lightning",
+      "role": "Specialist",
+      "rarity": "Gold",
+      "stages": [
+        {
+          "name": "Synthhog",
+          "rarity": "Gold",
+          "image": "Synthhog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Synthhog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Synthhog",
+          "evolvesTo": "Sonarbat",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Synthhog to increase stats 3 times.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards)"
+          ]
+        },
+        {
+          "name": "Sonarbat",
+          "rarity": "Red",
+          "image": "Sonarbat.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
+          "evolvesTo": "Umbraveil",
+          "starsRequired": 36,
+          "trials": [
+            "TBA"
+          ]
+        },
+        {
+          "name": "Umbraveil",
+          "rarity": "Rainbow",
+          "image": "Umbraveil.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Umbraveil.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Umbraveil",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Taptail",
+      "type": "Rock",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Taptail",
+          "rarity": "Purple",
+          "image": "Taptail.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Taptail.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Taptail",
+          "evolvesTo": "Rattlecoil",
+          "starsRequired": 6,
+          "trials": [
+            "Kill 300 Zobos in map stages."
+          ]
+        },
+        {
+          "name": "Rattlecoil",
+          "rarity": "Gold",
+          "image": "Rattlecoil.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rattlecoil.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rattlecoil",
+          "evolvesTo": "Clangnaga",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Rattlecoil to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ]
+        },
+        {
+          "name": "Clangnaga",
+          "rarity": "Red",
+          "image": "Clangnaga.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Clangnaga.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Clangnaga",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Tindercub",
+      "type": "Fire",
+      "role": "Specialist",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Tindercub",
+          "rarity": "Purple",
+          "image": "Tindercub.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Tindercub.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Tindercub",
+          "evolvesTo": "Kitjitsu",
+          "starsRequired": 6,
+          "trials": [
+            "Use Tindercub to clear 20 stages."
+          ]
+        },
+        {
+          "name": "Kitjitsu",
+          "rarity": "Gold",
+          "image": "Kitjitsu.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Kitjitsu.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Kitjitsu",
+          "evolvesTo": "Taiglow",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Kitjitsu to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ]
+        },
+        {
+          "name": "Taiglow",
+          "rarity": "Red",
+          "image": "Taiglow.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Taiglow.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Taiglow",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Voltfawn",
+      "type": "Lightning",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Voltfawn",
+          "rarity": "Purple",
+          "image": "Voltfawn.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltfawn.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltfawn",
+          "evolvesTo": "Sparkdoe",
+          "starsRequired": 6,
+          "trials": [
+            "Kill 300 Zobos."
+          ]
+        },
+        {
+          "name": "Sparkdoe",
+          "rarity": "Gold",
+          "image": "Sparkdoe.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sparkdoe.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sparkdoe",
+          "evolvesTo": "Zapantler",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sparkdoe to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ]
+        },
+        {
+          "name": "Zapantler",
+          "rarity": "Red",
+          "image": "Zapantler.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zapantler.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zapantler",
+          "evolvesTo": "Magnedart",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards).",
+            "Feed 15 Tempura Plates."
+          ]
+        },
+        {
+          "name": "Magnedart",
+          "rarity": "Rainbow",
+          "image": "Magnedart.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Magnedart.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Magnedart",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Voltkit",
+      "type": "Lightning",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Voltkit",
+          "rarity": "Purple",
+          "image": "Voltkit.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltkit.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltkit",
+          "evolvesTo": "Voltling",
+          "starsRequired": 6,
+          "trials": [
+            "Bring Voltkit to Horde Invasion 3 times. May justice overcome fear!"
+          ]
+        },
+        {
+          "name": "Voltling",
+          "rarity": "Gold",
+          "image": "Voltling.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltling.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltling",
+          "evolvesTo": "Voltverine",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Voltling to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ]
+        },
+        {
+          "name": "Voltverine",
+          "rarity": "Red",
+          "image": "Voltverine.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltverine.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltverine",
+          "evolvesTo": "Voltreaver",
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "Play Marathon Party (use x6000 skateboards) or Fishing Contest (use x6000 fishing rods).",
+            "Own 5 Lightning Badges."
+          ]
+        },
+        {
+          "name": "Voltreaver",
+          "rarity": "Rainbow",
+          "image": "Voltreaver.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltreaver.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltreaver",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Waddledo",
+      "type": "Water",
+      "role": "Tank",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Waddledo",
+          "rarity": "Purple",
+          "image": "Waddledo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Waddledo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Waddledo",
+          "evolvesTo": "Swaystroll",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Waddledo Shaved Ice x3."
+          ]
+        },
+        {
+          "name": "Swaystroll",
+          "rarity": "Gold",
+          "image": "Swaystroll.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Swaystroll.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Swaystroll",
+          "evolvesTo": "Stoodbeak",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Swaystroll to increase stats 3 times.",
+            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)."
+          ]
+        },
+        {
+          "name": "Stoodbeak",
+          "rarity": "Red",
+          "image": "Stoodbeak.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Stoodbeak.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Stoodbeak",
+          "evolvesTo": "Glideflip",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards).",
+            "In Horde Invasion, upgrade Stoodbeak to Lvl 7 or above for a total of 5 time(s)."
+          ]
+        },
+        {
+          "name": "Glideflip",
+          "rarity": "Rainbow",
+          "image": "Glideflip.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Glideflip.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Glideflip",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Wobbler",
+      "type": "Lightning",
+      "role": "DPS",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Wobbler",
+          "rarity": "Blue",
+          "image": "Wobbler.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Wobbler.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Wobbler",
+          "evolvesTo": "Boltskipper",
+          "starsRequired": 6,
+          "trials": []
+        },
+        {
+          "name": "Boltskipper",
+          "rarity": "Purple",
+          "image": "Boltskipper.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Boltskipper.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Boltskipper",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Zaplet",
+      "type": "Lightning",
+      "role": "Specialist",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Zaplet",
+          "rarity": "Purple",
+          "image": "Zaplet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zaplet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zaplet",
+          "evolvesTo": "Synthhog",
+          "starsRequired": 6,
+          "trials": [
+            "In Horde Invasion, upgrade Zaplet to Lvl 5 or above for a total of 1 time(s)."
+          ]
+        },
+        {
+          "name": "Synthhog",
+          "rarity": "Gold",
+          "image": "Synthhog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Synthhog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Synthhog",
+          "evolvesTo": "Sonarbat",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Synthhog to increase stats 3 times.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards)"
+          ]
+        },
+        {
+          "name": "Sonarbat",
+          "rarity": "Red",
+          "image": "Sonarbat.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
+          "evolvesTo": "Umbraveil",
+          "starsRequired": 36,
+          "trials": [
+            "TBA"
+          ]
+        },
+        {
+          "name": "Umbraveil",
+          "rarity": "Rainbow",
+          "image": "Umbraveil.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Umbraveil.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Umbraveil",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Zappur",
+      "type": "Lightning",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Zappur",
+          "rarity": "Purple",
+          "image": "Zappur.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zappur.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zappur",
+          "evolvesTo": "Electroar",
+          "starsRequired": 6,
+          "trials": [
+            "Use Zappur to clear 20 stages. Show 'em who's boss!"
+          ]
+        },
+        {
+          "name": "Electroar",
+          "rarity": "Gold",
+          "image": "Electroar.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Electroar.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Electroar",
+          "evolvesTo": "Blitzmane",
+          "starsRequired": 12,
+          "trials": [
+            "Feed Electroar to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ]
+        },
+        {
+          "name": "Blitzmane",
+          "rarity": "Red",
+          "image": "Blitzmane.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Blitzmane.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Blitzmane",
+          "evolvesTo": "Stormlion",
+          "starsRequired": 24,
+          "trials": [
+            "Feed this Tatari to B Quality.",
+            "Play Marathon Party (use x6000 skateboards) or Fishing Contest (use x6000 fishing rods).",
+            "Own 24-Star Lightning Tatari x3."
+          ]
+        },
+        {
+          "name": "Stormlion",
+          "rarity": "Rainbow",
+          "image": "Stormlion.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Stormlion.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Stormlion",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Zapuni",
+      "type": "Lightning",
+      "role": "DPS",
+      "rarity": "Purple",
+      "stages": [
+        {
+          "name": "Zapuni",
+          "rarity": "Purple",
+          "image": "Zapuni.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zapuni.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zapuni",
+          "evolvesTo": "Surgehoof",
+          "starsRequired": 6,
+          "trials": [
+            "Attempt Boss Challenge 10 times."
+          ]
+        },
+        {
+          "name": "Surgehoof",
+          "rarity": "Gold",
+          "image": "Surgehoof.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Surgehoof.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Surgehoof",
+          "evolvesTo": "Voltmare",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Surgehoof to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ]
+        },
+        {
+          "name": "Voltmare",
+          "rarity": "Red",
+          "image": "Voltmare.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Voltmare.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Voltmare",
+          "evolvesTo": "Boltallion",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Snowboard Sprint/Marathon Party (use x6000 boards) or Fishing Contest (use x6000 fishing rods).",
+            "Own 24-star Lightning Tatari x3."
+          ]
+        },
+        {
+          "name": "Boltallion",
+          "rarity": "Rainbow",
+          "image": "Boltallion.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Boltallion.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Boltallion",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    },
+    {
+      "id": "Zapup",
+      "type": "Lightning",
+      "role": "Guardian",
+      "rarity": "Blue",
+      "stages": [
+        {
+          "name": "Zapup",
+          "rarity": "Blue",
+          "image": "Zapup.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zapup.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zapup",
+          "evolvesTo": "Zapooch",
+          "starsRequired": 1,
+          "trials": []
+        },
+        {
+          "name": "Zapooch",
+          "rarity": "Blue",
+          "image": "Zapooch.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zapooch.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zapooch",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": []
+        }
+      ]
+    }
+  ]
+}
