@@ -121,6 +121,46 @@ export const LOCALES = {
     moveUp: "Subir",
     moveDown: "Bajar",
     remove: "Quitar",
+    helpTour: "Ayuda — tour de la herramienta",
+    tourNext: "Siguiente",
+    tourPrev: "Anterior",
+    tourDone: "Listo",
+    tourWelcomeTitle: "Bienvenido",
+    tourWelcomeBody:
+      "Este planeador te ayuda a marcar qué Tatari tienes, ver qué falta para evolucionar y ordenar prioridades. Dale a Siguiente para un recorrido rápido.",
+    tourLangTitle: "Idioma",
+    tourLangBody:
+      "Cambia la interfaz a Español, English o Português. En “Más idiomas…” puedes traducir con el buscador (también los trials del wiki).",
+    tourTabsTitle: "Vistas",
+    tourTabsBody:
+      "Catálogo lista todos los Tatari. Planeados es tu cola de evoluciones prioritarias (con contador).",
+    tourSearchTitle: "Buscar",
+    tourSearchBody: "Escribe un nombre (o parte) para filtrar líneas del catálogo.",
+    tourTypeTitle: "Tipo",
+    tourTypeBody: "Filtra por elemento (Agua, Fuego, Planta…). “Todos” quita el filtro.",
+    tourRoleTitle: "Rol",
+    tourRoleBody: "Filtra por rol de combate (Ataque, Curación, Tanque, etc.).",
+    tourFiltersTitle: "Más filtros",
+    tourFiltersBody:
+      "Rareza base, posesión (las que tienes / no), orden (nombre o estrellas) y “Solo listos” para los que ya pueden evolucionar.",
+    tourActionsTitle: "Acciones del catálogo",
+    tourActionsBody:
+      "Actualizar estrellas (vista) recorre los “Lo tengo” visibles. También puedes marcar todos, exportar o importar tu progreso.",
+    tourCardTitle: "Cartas Tatari",
+    tourCardBody:
+      "Marca “Lo tengo”, abre Ver detalles para forma, estrellas, trials y añadir al plan. El chip Listo indica que cumple requisitos.",
+    tourPlannedTabTitle: "Planeados",
+    tourPlannedTabBody:
+      "Aquí ves solo lo que añadiste al plan: orden, checklist de trials y estrellas.",
+    tourWizardTitle: "Actualizar estrellas",
+    tourWizardBody:
+      "Abre un asistente paso a paso para revisar/actualizar estrellas de la cola del plan (o de los que tienes si el plan está vacío).",
+    tourPlanListTitle: "Tu cola",
+    tourPlanListBody:
+      "Reordena con ↑↓, marca trials hechos, quita del plan con × y abre detalles cuando quieras. Si está vacío, añade Tatari desde el catálogo.",
+    tourDoneTitle: "¡Listo!",
+    tourDoneBody:
+      "Ya conoces lo esencial. Puedes repetir este tour cuando quieras con el botón ? abajo a la derecha.",
   },
   en: {
     name: "English",
@@ -237,6 +277,46 @@ export const LOCALES = {
     moveUp: "Move up",
     moveDown: "Move down",
     remove: "Remove",
+    helpTour: "Help — tool tour",
+    tourNext: "Next",
+    tourPrev: "Back",
+    tourDone: "Done",
+    tourWelcomeTitle: "Welcome",
+    tourWelcomeBody:
+      "This planner helps you mark which Tatari you own, see what’s left to evolve, and order priorities. Hit Next for a quick walkthrough.",
+    tourLangTitle: "Language",
+    tourLangBody:
+      "Switch the UI to Español, English, or Português. “More languages…” uses the search translator (including wiki trials).",
+    tourTabsTitle: "Views",
+    tourTabsBody:
+      "Catalog lists every Tatari. Planned is your priority evolution queue (with a count).",
+    tourSearchTitle: "Search",
+    tourSearchBody: "Type a name (or part of it) to filter catalog lines.",
+    tourTypeTitle: "Type",
+    tourTypeBody: "Filter by element (Water, Fire, Grass…). “All” clears the filter.",
+    tourRoleTitle: "Role",
+    tourRoleBody: "Filter by combat role (Attack, Healer, Tank, etc.).",
+    tourFiltersTitle: "More filters",
+    tourFiltersBody:
+      "Base rarity, ownership, sort (name or stars), and “Ready only” for lines that can evolve now.",
+    tourActionsTitle: "Catalog actions",
+    tourActionsBody:
+      "Update stars (view) walks owned Tatari in the current filters. You can also own all, export, or import progress.",
+    tourCardTitle: "Tatari cards",
+    tourCardBody:
+      "Check “I own it”, open See details for form, stars, trials, and add to plan. Ready means requirements are met.",
+    tourPlannedTabTitle: "Planned",
+    tourPlannedTabBody:
+      "Only what you added to the plan: order, trial checklist, and stars.",
+    tourWizardTitle: "Update stars",
+    tourWizardBody:
+      "Opens a step-by-step wizard to review/update stars for the plan queue (or owned ones if the plan is empty).",
+    tourPlanListTitle: "Your queue",
+    tourPlanListBody:
+      "Reorder with ↑↓, tick finished trials, remove with ×, and open details anytime. If empty, add Tatari from the catalog.",
+    tourDoneTitle: "You’re set!",
+    tourDoneBody:
+      "That’s the essentials. Replay this tour anytime with the ? button at the bottom right.",
   },
   pt: {
     name: "Português",
@@ -354,6 +434,46 @@ export const LOCALES = {
     moveUp: "Subir",
     moveDown: "Baixar",
     remove: "Remover",
+    helpTour: "Ajuda — tour da ferramenta",
+    tourNext: "Seguinte",
+    tourPrev: "Anterior",
+    tourDone: "Pronto",
+    tourWelcomeTitle: "Bem-vindo",
+    tourWelcomeBody:
+      "Este planejador ajuda a marcar quais Tatari você tem, ver o que falta para evoluir e ordenar prioridades. Toque em Seguinte para um passeio rápido.",
+    tourLangTitle: "Idioma",
+    tourLangBody:
+      "Mude a interface para Español, English ou Português. Em “Mais idiomas…” use o buscador do tradutor (também trials do wiki).",
+    tourTabsTitle: "Vistas",
+    tourTabsBody:
+      "Catálogo lista todos os Tatari. Planejados é a sua fila de evoluções prioritárias (com contador).",
+    tourSearchTitle: "Buscar",
+    tourSearchBody: "Digite um nome (ou parte) para filtrar linhas do catálogo.",
+    tourTypeTitle: "Tipo",
+    tourTypeBody: "Filtre por elemento (Água, Fogo, Planta…). “Todos” limpa o filtro.",
+    tourRoleTitle: "Função",
+    tourRoleBody: "Filtre por função de combate (Ataque, Cura, Tanque, etc.).",
+    tourFiltersTitle: "Mais filtros",
+    tourFiltersBody:
+      "Raridade base, posse, ordem (nome ou estrelas) e “Só prontos” para quem já pode evoluir.",
+    tourActionsTitle: "Ações do catálogo",
+    tourActionsBody:
+      "Atualizar estrelas (vista) percorre os “Eu tenho” visíveis. Também pode marcar todos, exportar ou importar progresso.",
+    tourCardTitle: "Cartas Tatari",
+    tourCardBody:
+      "Marque “Eu tenho”, abra Ver detalhes para forma, estrelas, trials e adicionar ao plano. Pronto indica requisitos cumpridos.",
+    tourPlannedTabTitle: "Planejados",
+    tourPlannedTabBody:
+      "Só o que você adicionou ao plano: ordem, checklist de trials e estrelas.",
+    tourWizardTitle: "Atualizar estrelas",
+    tourWizardBody:
+      "Abre um assistente passo a passo para revisar/atualizar estrelas da fila do plano (ou dos que você tem se o plano estiver vazio).",
+    tourPlanListTitle: "Sua fila",
+    tourPlanListBody:
+      "Reordene com ↑↓, marque trials feitos, remova com × e abra detalhes quando quiser. Se estiver vazia, adicione Tatari no catálogo.",
+    tourDoneTitle: "Pronto!",
+    tourDoneBody:
+      "Você já conhece o essencial. Pode repetir este tour quando quiser com o botão ? no canto inferior direito.",
   },
 };
 

@@ -30,6 +30,7 @@ import {
   ensureTrialsTranslated,
   collectTrialTexts,
 } from "./trialTranslate.js";
+import { startAppTour } from "./tour.js";
 
 const TYPE_KEYS = {
   Water: "water",
@@ -1209,6 +1210,10 @@ async function init() {
   document.body.addEventListener("click", onClick);
   document.body.addEventListener("change", onChange);
   document.body.addEventListener("input", onInput);
+
+  document.getElementById("btn-help-tour")?.addEventListener("click", () => {
+    startAppTour({ setTab });
+  });
 
   setTab("catalog");
   await prepareTrialTranslations();
