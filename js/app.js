@@ -7,6 +7,12 @@ import {
   movePlan,
   exportState,
   importState,
+  setTeamSlot,
+  clearTeamSlot,
+  getFeedToday,
+  bumpFeedToday,
+  addLaneEnemy,
+  removeLaneEnemy,
 } from "./storage.js";
 import {
   wikiImageUrl,
@@ -31,6 +37,25 @@ import {
   collectTrialTexts,
 } from "./trialTranslate.js";
 import { startAppTour } from "./tour.js";
+import {
+  OBJECTIVE_CATEGORIES,
+  pendingCategories,
+  hasPendingCategory,
+  parseOwnGoal,
+  countOwnedOfType,
+} from "./objectives.js";
+import {
+  CATALOG_PAGE_SIZE,
+  UTIL_PAGES,
+  renderUtilPager,
+  renderTypesPage,
+  renderCollectionPage,
+  renderFeedPage,
+  renderPriorityPage,
+  renderMinigamesPage,
+  renderTeamPanel,
+  renderTeamPicker,
+} from "./tools.js";
 
 const TYPE_KEYS = {
   Water: "water",
@@ -109,6 +134,12 @@ function roleIconHtml(role, size = 20) {
 }
 
 let catalog = { lines: [], updatedAt: null };
+/** @type {object} */
+let typeChart = { types: [], strongAgainst: {}, weakAgainst: {} };
+/** @type {object} */
+let feeding = { dailyFeedLimit: 15, stages: [], gradeLetters: [] };
+/** @type {object} */
+let tiersData = { tiers: {} };
 let state = loadState();
 let filters = {
   query: "",
@@ -120,12 +151,25 @@ let filters = {
   sort: "name",
 };
 let activeTab = "catalog";
+let catalogPage = 0;
+let utilPage = "types";
+let teamEnemyType = "";
+let teamMode = "campaign";
+/** @type {number | null} */
+let pendingTeamSlot = null;
+let teamPickerType = "";
+let teamPickerRole = "";
+let miniPlanOnly = false;
 let openDetailId = null;
+/** @type {{ category: string }} */
+let planFilters = { category: "" };
 
 const els = {
   list: document.getElementById("line-list"),
+  catalogPager: document.getElementById("catalog-pager"),
   planList: document.getElementById("plan-list"),
   planCount: document.getElementById("plan-count"),
+  plannedActivityPicker: document.getElementById("planned-activity-picker"),
   syncDate: document.getElementById("sync-date"),
   search: document.getElementById("filter-search"),
   typePicker: document.getElementById("filter-type-picker"),
@@ -149,8 +193,18 @@ const els = {
   wizardClose: document.getElementById("wizard-close"),
   panelCatalog: document.getElementById("panel-catalog"),
   panelPlanned: document.getElementById("panel-planned"),
+  panelTeam: document.getElementById("panel-team"),
+  panelUtils: document.getElementById("panel-utils"),
+  teamRoot: document.getElementById("team-root"),
+  teamPicker: document.getElementById("team-picker-modal"),
+  teamPickerBody: document.getElementById("team-picker-body"),
+  teamPickerClose: document.getElementById("team-picker-close"),
+  utilsPagerHost: document.getElementById("utils-pager-host"),
+  utilsRoot: document.getElementById("utils-root"),
   tabCatalog: document.getElementById("tab-catalog"),
   tabPlanned: document.getElementById("tab-planned"),
+  tabTeam: document.getElementById("tab-team"),
+  tabUtils: document.getElementById("tab-utils"),
 };
 
 /** @type {{ ids: string[], index: number } | null} */
@@ -492,11 +546,41 @@ function renderDetail(lineId) {
 
     ${renderNextRequirements(line, progress)}
 
+    ${renderSkillsBlock(display, line)}
+
     <div class="detail-actions">
       <button type="button" class="btn" data-action="plan" data-line="${line.id}">
         ${inPlan ? t("removeFromPlan") : t("addToPlan")}
       </button>
       <a class="btn ghost" href="${display.wiki}" target="_blank" rel="noopener">${t("wiki")}</a>
+    </div>
+  `;
+}
+
+function renderSkillsBlock(stage, line) {
+  const skills = stage?.skills?.length
+    ? stage.skills
+    : line.stages?.flatMap((s) => s.skills || []) || [];
+  const aura = stage?.aura || line.aura;
+  if (!skills.length && !aura) return "";
+  const skill = skills[0];
+  return `
+    <div class="detail-skills">
+      ${
+        skill?.name
+          ? `<p><strong>${t("skillName")}:</strong> ${skill.name}</p>`
+          : ""
+      }
+      ${
+        skill?.description
+          ? `<p class="muted">${skill.description}</p>`
+          : ""
+      }
+      ${
+        aura
+          ? `<p><strong>${t("teamAuras")}:</strong> ${aura}</p>`
+          : ""
+      }
     </div>
   `;
 }
@@ -544,14 +628,152 @@ function getVisibleCatalogLines() {
   return lines;
 }
 
+function resetCatalogPage() {
+  catalogPage = 0;
+}
+
+function renderCatalogPager(totalPages) {
+  if (!els.catalogPager) return;
+  if (totalPages <= 1) {
+    els.catalogPager.hidden = true;
+    els.catalogPager.innerHTML = "";
+    return;
+  }
+  els.catalogPager.hidden = false;
+  const pages = [];
+  for (let i = 0; i < totalPages; i++) {
+    pages.push(
+      `<button type="button" class="page-btn ${
+        i === catalogPage ? "is-active" : ""
+      }" data-action="catalog-page" data-page="${i}">${i + 1}</button>`
+    );
+  }
+  els.catalogPager.innerHTML = `
+    <button type="button" class="page-btn" data-action="catalog-page-prev" ${
+      catalogPage <= 0 ? "disabled" : ""
+    }>‹</button>
+    <span class="page-info">${t("pageOf", {
+      cur: catalogPage + 1,
+      total: totalPages,
+    })}</span>
+    ${pages.join("")}
+    <button type="button" class="page-btn" data-action="catalog-page-next" ${
+      catalogPage >= totalPages - 1 ? "disabled" : ""
+    }>›</button>
+  `;
+}
+
 function renderList() {
   const lines = getVisibleCatalogLines();
   els.count.textContent = t("lines", { n: lines.length });
+  const totalPages = Math.max(1, Math.ceil(lines.length / CATALOG_PAGE_SIZE));
+  if (catalogPage >= totalPages) catalogPage = totalPages - 1;
+  if (catalogPage < 0) catalogPage = 0;
+
   if (!lines.length) {
     els.list.innerHTML = `<p class="empty">${t("emptyFilters")}</p>`;
+    renderCatalogPager(0);
     return;
   }
-  els.list.innerHTML = lines.map(renderLineCard).join("");
+  const start = catalogPage * CATALOG_PAGE_SIZE;
+  const pageLines = lines.slice(start, start + CATALOG_PAGE_SIZE);
+  els.list.innerHTML = pageLines.map(renderLineCard).join("");
+  renderCatalogPager(totalPages);
+}
+
+function imgForLine(line) {
+  const progress = getLineProgress(state, line.id);
+  const display = getDisplayStage(line, progress);
+  return imgHtml({
+    src: display?.imageUrl || display?.image,
+    alt: display?.name || line.id,
+    width: 48,
+    height: 48,
+  });
+}
+
+function renderTeam() {
+  if (!els.teamRoot) return;
+  els.teamRoot.innerHTML = renderTeamPanel({
+    catalog,
+    state,
+    getLineProgress,
+    typeChart,
+    enemyType: teamEnemyType,
+    teamMode,
+    typeLabel,
+    roleLabel,
+    imgForLine,
+  });
+}
+
+function renderTeamPickerModal() {
+  if (!els.teamPickerBody || pendingTeamSlot == null) return;
+  els.teamPickerBody.innerHTML = renderTeamPicker({
+    catalog,
+    state,
+    getLineProgress,
+    typeChart,
+    slotIndex: pendingTeamSlot,
+    teamMode,
+    typeLabel,
+    roleLabel,
+    imgForLine,
+    filterType: teamPickerType,
+    filterRole: teamPickerRole,
+  });
+}
+
+function openTeamPicker(slotIndex) {
+  pendingTeamSlot = slotIndex;
+  teamPickerType = "";
+  teamPickerRole = "";
+  renderTeamPickerModal();
+  if (!els.teamPicker) return;
+  if (typeof els.teamPicker.showModal === "function") {
+    if (!els.teamPicker.open) els.teamPicker.showModal();
+  } else {
+    els.teamPicker.setAttribute("open", "");
+  }
+}
+
+function closeTeamPicker() {
+  pendingTeamSlot = null;
+  if (!els.teamPicker) return;
+  if (els.teamPicker.open) els.teamPicker.close();
+  else els.teamPicker.removeAttribute("open");
+}
+
+function renderUtils() {
+  if (!els.utilsPagerHost || !els.utilsRoot) return;
+  if (!UTIL_PAGES.some((p) => p.id === utilPage)) utilPage = "types";
+  els.utilsPagerHost.innerHTML = renderUtilPager(utilPage);
+  const ctx = {
+    catalog,
+    state,
+    getLineProgress,
+    getNextStep,
+    isReadyToEvolve,
+    typeChart,
+    feeding,
+    tiersData,
+    getFeedToday,
+    typeLabel,
+    roleLabel,
+    rarityLabel,
+    planOnly: miniPlanOnly,
+  };
+  if (utilPage === "types") {
+    els.utilsRoot.innerHTML = renderTypesPage(typeChart, typeLabel);
+  } else if (utilPage === "feed") {
+    els.utilsRoot.innerHTML = renderFeedPage(ctx);
+  } else if (utilPage === "collection") {
+    els.utilsRoot.innerHTML = renderCollectionPage(ctx);
+  } else if (utilPage === "priority") {
+    els.utilsRoot.innerHTML = renderPriorityPage(ctx);
+  } else {
+    els.utilsRoot.innerHTML = renderMinigamesPage(ctx);
+  }
 }
 
 function renderPlan() {
@@ -568,12 +790,15 @@ function renderPlan() {
     return;
   }
 
-  els.planList.innerHTML = state.planOrder
+  const cards = state.planOrder
     .map((id, order) => {
       const line = catalog.lines.find((l) => l.id === id);
       if (!line) return "";
       const progress = getLineProgress(state, id);
       const next = getNextStep(line, progress);
+      if (!hasPendingCategory(next, progress, planFilters.category)) {
+        return "";
+      }
       const ready = isReadyToEvolve(line, progress);
       const display = getDisplayStage(line, progress);
       const { stage } = getCurrentStage(line, progress);
@@ -583,6 +808,65 @@ function renderPlan() {
           ? `${stage.name} → ${next.target}${ready ? ` · ${t("readyShort")}` : ""}`
           : `${stage.name} · ${t("complete")}`;
 
+      const cats = pendingCategories(next, progress);
+      const activityChips = cats.length
+        ? `<div class="plan-activity-chips">${cats
+            .map(
+              (c) =>
+                `<span class="plan-activity-chip">${t(categoryLabelKey(c))}</span>`
+            )
+            .join("")}</div>`
+        : "";
+
+      const metaBadges = [];
+      if (next?.starsRequired != null) {
+        const need = Math.max(0, next.starsRequired - progress.stars);
+        metaBadges.push(
+          need === 0
+            ? `<span class="plan-meta-badge is-ok">${t("starsProgress", {
+                cur: progress.stars,
+                req: next.starsRequired,
+              })}</span>`
+            : `<span class="plan-meta-badge">${t("starsNeed", {
+                n: need,
+                cur: progress.stars,
+                req: next.starsRequired,
+              })}</span>`
+        );
+      }
+      if (next?.trials) {
+        for (const trial of next.trials) {
+          const own = parseOwnGoal(trial);
+          if (!own) continue;
+          const have = countOwnedOfType(
+            catalog,
+            state,
+            getLineProgress,
+            own.type,
+            own.stars
+          );
+          const typeName = typeLabel(
+            Object.keys(TYPE_KEYS).find(
+              (k) => k.toLowerCase() === String(own.type).toLowerCase()
+            ) || own.type
+          );
+          metaBadges.push(
+            `<span class="plan-meta-badge ${have >= own.count ? "is-ok" : ""}">${t(
+              "ownProgress",
+              {
+                have,
+                need: own.count,
+                stars: own.stars,
+                type: typeName,
+              }
+            )}</span>`
+          );
+        }
+      }
+      const metaHtml = metaBadges.length
+        ? `<div class="plan-meta-badges">${metaBadges.join("")}</div>`
+        : "";
+
       return `
         <article class="plan-card ${typeClass(line.type)} ${ready ? "ready" : ""}" data-id="${id}">
           <div class="plan-card-top">
@@ -591,6 +875,7 @@ function renderPlan() {
             <div class="plan-text">
               <strong>${line.id}</strong>
               <span>${subtitle}</span>
+              ${activityChips}
             </div>
             <div class="plan-actions">
               <button type="button" class="icon-btn" data-action="plan-up" data-line="${id}" aria-label="${t("moveUp")}">↑</button>
@@ -599,6 +884,7 @@ function renderPlan() {
             </div>
           </div>
           <div class="plan-stars">${renderStarVisual(progress.stars)}</div>
+          ${metaHtml}
           ${renderChecklist(line, progress)}
           <div class="plan-card-foot">
             <button type="button" class="btn sm ghost" data-action="details" data-line="${id}">
@@ -608,22 +894,63 @@ function renderPlan() {
         </article>
       `;
     })
+    .filter(Boolean);
+
+  if (!cards.length) {
+    els.planList.innerHTML = `<p class="empty">${t("plannedActivityEmpty")}</p>`;
+    return;
+  }
+
+  els.planList.innerHTML = cards.join("");
+}
+
+function categoryLabelKey(cat) {
+  const map = {
+    feed: "objCatFeed",
+    minigame: "objCatMinigame",
+    craft: "objCatCraft",
+    team: "objCatTeam",
+    own: "objCatOwn",
+    other: "objCatOther",
+  };
+  return map[cat] || "objCatOther";
+}
+
+function renderPlannedActivityPicker() {
+  if (!els.plannedActivityPicker) return;
+  const cats = [
+    { id: "", label: t("all") },
+    ...OBJECTIVE_CATEGORIES.map((id) => ({
+      id,
+      label: t(categoryLabelKey(id)),
+    })),
+  ];
+  els.plannedActivityPicker.innerHTML = cats
+    .map((c) => {
+      const active = planFilters.category === c.id;
+      return `<button type="button" class="type-chip ${active ? "is-active" : ""}" data-action="set-plan-activity" data-category="${c.id}" role="option" aria-selected="${active}">${c.label}</button>`;
+    })
     .join("");
 }
 
 function setTab(tab) {
   activeTab = tab;
-  const isCatalog = tab === "catalog";
-
-  els.tabCatalog.classList.toggle("is-active", isCatalog);
-  els.tabPlanned.classList.toggle("is-active", !isCatalog);
-  els.tabCatalog.setAttribute("aria-selected", String(isCatalog));
-  els.tabPlanned.setAttribute("aria-selected", String(!isCatalog));
-
-  els.panelCatalog.classList.toggle("is-active", isCatalog);
-  els.panelPlanned.classList.toggle("is-active", !isCatalog);
-  els.panelCatalog.hidden = !isCatalog;
-  els.panelPlanned.hidden = isCatalog;
+  const map = {
+    catalog: [els.tabCatalog, els.panelCatalog],
+    planned: [els.tabPlanned, els.panelPlanned],
+    team: [els.tabTeam, els.panelTeam],
+    utils: [els.tabUtils, els.panelUtils],
+  };
+  for (const [id, [tabEl, panelEl]] of Object.entries(map)) {
+    if (!tabEl || !panelEl) continue;
+    const on = id === tab;
+    tabEl.classList.toggle("is-active", on);
+    tabEl.setAttribute("aria-selected", String(on));
+    panelEl.classList.toggle("is-active", on);
+    panelEl.hidden = !on;
+  }
+  if (tab === "team") renderTeam();
+  if (tab === "utils") renderUtils();
 }
 
 /** @param {"plan" | "visible"} mode */
@@ -792,6 +1119,8 @@ function refresh({ keepStarsFocus = false } = {}) {
 
   renderList();
   renderPlan();
+  if (activeTab === "team") renderTeam();
+  if (activeTab === "utils") renderUtils();
   if (openDetailId && els.modal.open) {
     renderDetail(openDetailId);
     if (starsFocused && starsLine === openDetailId) {
@@ -823,8 +1152,90 @@ function onClick(e) {
     return;
   }
 
+  if (action === "filter-catalog-line" && lineId) {
+    filters.query = lineId;
+    filters.owned = "no";
+    if (els.search) els.search.value = lineId;
+    if (els.owned) els.owned.value = "no";
+    resetCatalogPage();
+    setTab("catalog");
+    renderList();
+    return;
+  }
+
+  if (action === "catalog-page") {
+    catalogPage = Number(actionEl.getAttribute("data-page")) || 0;
+    renderList();
+    return;
+  }
+  if (action === "catalog-page-prev") {
+    catalogPage = Math.max(0, catalogPage - 1);
+    renderList();
+    return;
+  }
+  if (action === "catalog-page-next") {
+    catalogPage += 1;
+    renderList();
+    return;
+  }
+
+  if (action === "util-page") {
+    utilPage = actionEl.getAttribute("data-page") || "types";
+    renderUtils();
+    return;
+  }
+
+  if (action === "feed-bump") {
+    const delta = Number(actionEl.getAttribute("data-delta")) || 0;
+    bumpFeedToday(state, delta);
+    renderUtils();
+    return;
+  }
+
+  if (action === "team-mode") {
+    teamMode = actionEl.getAttribute("data-mode") || "campaign";
+    renderTeam();
+    return;
+  }
+
+  if (action === "lane-enemy-remove") {
+    const lane = Number(actionEl.getAttribute("data-lane"));
+    const type = actionEl.getAttribute("data-type") || "";
+    removeLaneEnemy(state, lane, type);
+    renderTeam();
+    return;
+  }
+
+  if (action === "team-clear") {
+    const slot = Number(actionEl.getAttribute("data-slot"));
+    clearTeamSlot(state, slot);
+    renderTeam();
+    return;
+  }
+
+  if (action === "team-pick") {
+    openTeamPicker(Number(actionEl.getAttribute("data-slot")));
+    return;
+  }
+
+  if (action === "team-assign" && lineId) {
+    if (pendingTeamSlot == null) return;
+    setTeamSlot(state, pendingTeamSlot, lineId);
+    closeTeamPicker();
+    renderTeam();
+    return;
+  }
+
+  if (action === "set-plan-activity") {
+    planFilters.category = actionEl.getAttribute("data-category") || "";
+    renderPlannedActivityPicker();
+    renderPlan();
+    return;
+  }
+
   if (action === "set-type") {
     filters.type = actionEl.getAttribute("data-type") || "";
+    resetCatalogPage();
     els.typePicker.querySelectorAll(".type-chip").forEach((btn) => {
       const on = (btn.getAttribute("data-type") || "") === filters.type;
       btn.classList.toggle("is-active", on);
@@ -836,6 +1247,7 @@ function onClick(e) {
 
   if (action === "set-role") {
     filters.role = actionEl.getAttribute("data-role") || "";
+    resetCatalogPage();
     els.rolePicker.querySelectorAll(".type-chip").forEach((btn) => {
       const on = (btn.getAttribute("data-role") || "") === filters.role;
       btn.classList.toggle("is-active", on);
@@ -923,6 +1335,56 @@ function onChange(e) {
   if (!(target instanceof HTMLElement)) return;
   const action = target.getAttribute("data-action");
   const lineId = target.getAttribute("data-line");
+
+  if (action === "team-enemy") {
+    teamEnemyType = /** @type {HTMLSelectElement} */ (target).value || "";
+    renderTeam();
+    return;
+  }
+
+  if (action === "lane-enemy-add") {
+    const lane = Number(target.getAttribute("data-lane"));
+    const type = /** @type {HTMLSelectElement} */ (target).value || "";
+    if (type) {
+      addLaneEnemy(state, lane, type);
+      renderTeam();
+    }
+    return;
+  }
+
+  if (action === "team-picker-type") {
+    teamPickerType = /** @type {HTMLSelectElement} */ (target).value || "";
+    renderTeamPickerModal();
+    return;
+  }
+
+  if (action === "team-picker-role") {
+    teamPickerRole = /** @type {HTMLSelectElement} */ (target).value || "";
+    renderTeamPickerModal();
+    return;
+  }
+
+  if (action === "mini-plan-only") {
+    miniPlanOnly = /** @type {HTMLInputElement} */ (target).checked;
+    renderUtils();
+    return;
+  }
+
+  if (action === "feed-grade" && lineId) {
+    setLineProgress(state, lineId, {
+      feedGrade: /** @type {HTMLSelectElement} */ (target).value || "",
+    });
+    return;
+  }
+
+  if (action === "feed-stage" && lineId) {
+    const raw = /** @type {HTMLInputElement} */ (target).value;
+    setLineProgress(state, lineId, {
+      feedStage: raw === "" ? null : Math.max(0, Math.min(15, Number(raw) || 0)),
+    });
+    return;
+  }
+
   if (!action || !lineId) return;
 
   if (action === "owned") {
@@ -966,8 +1428,14 @@ function onChange(e) {
 }
 
 function setupTabs() {
-  els.tabCatalog.addEventListener("click", () => setTab("catalog"));
-  els.tabPlanned.addEventListener("click", () => setTab("planned"));
+  els.tabCatalog?.addEventListener("click", () => setTab("catalog"));
+  els.tabPlanned?.addEventListener("click", () => setTab("planned"));
+  els.tabTeam?.addEventListener("click", () => setTab("team"));
+  els.tabUtils?.addEventListener("click", () => setTab("utils"));
+}
+
+function setupPlannedActivityFilter() {
+  renderPlannedActivityPicker();
 }
 
 function setupModal() {
@@ -985,6 +1453,14 @@ function setupModal() {
   });
   els.wizard.addEventListener("close", () => {
     starsWizard = null;
+  });
+
+  els.teamPickerClose?.addEventListener("click", () => closeTeamPicker());
+  els.teamPicker?.addEventListener("click", (e) => {
+    if (e.target === els.teamPicker) closeTeamPicker();
+  });
+  els.teamPicker?.addEventListener("close", () => {
+    pendingTeamSlot = null;
   });
 }
 
@@ -1085,6 +1561,7 @@ function setupLanguageOptionsRefresh() {
       ...new Set(catalog.lines.map((l) => l.rarity).filter(Boolean)),
     ].sort();
     renderFilterPickers(types, roles, rarities);
+    renderPlannedActivityPicker();
   }
 }
 
@@ -1114,22 +1591,27 @@ function setupFilters() {
 
   els.search.addEventListener("input", () => {
     filters.query = els.search.value;
+    resetCatalogPage();
     renderList();
   });
   els.rarity.addEventListener("change", () => {
     filters.rarity = els.rarity.value;
+    resetCatalogPage();
     renderList();
   });
   els.owned.addEventListener("change", () => {
     filters.owned = els.owned.value;
+    resetCatalogPage();
     renderList();
   });
   els.ready.addEventListener("change", () => {
     filters.ready = els.ready.checked;
+    resetCatalogPage();
     renderList();
   });
   els.sort.addEventListener("change", () => {
     filters.sort = els.sort.value;
+    resetCatalogPage();
     renderList();
   });
 }
@@ -1180,9 +1662,17 @@ async function init() {
 
   try {
     setLoaderStatus("loadingData");
-    const res = await fetch("./data/evolutions.json", { cache: "no-cache" });
-    if (!res.ok) throw new Error(`HTTP ${res.status}`);
-    catalog = normalizeCatalogImages(await res.json());
+    const [evoRes, typeRes, feedRes, tierRes] = await Promise.all([
+      fetch("./data/evolutions.json", { cache: "no-cache" }),
+      fetch("./data/type-chart.json", { cache: "no-cache" }),
+      fetch("./data/feeding.json", { cache: "no-cache" }),
+      fetch("./data/tiers.json", { cache: "no-cache" }),
+    ]);
+    if (!evoRes.ok) throw new Error(`HTTP ${evoRes.status}`);
+    catalog = normalizeCatalogImages(await evoRes.json());
+    if (typeRes.ok) typeChart = await typeRes.json();
+    if (feedRes.ok) feeding = await feedRes.json();
+    if (tierRes.ok) tiersData = await tierRes.json();
   } catch (err) {
     els.list.innerHTML = `<p class="empty">${t("loadFail", { msg: err.message })}</p>`;
     hideLoader();
@@ -1200,6 +1690,7 @@ async function init() {
   setupTabs();
   setupModal();
   setupFilters();
+  setupPlannedActivityFilter();
   setupImportExport();
 
   els.starsWizardBtn.addEventListener("click", () => openStarsWizard("plan"));

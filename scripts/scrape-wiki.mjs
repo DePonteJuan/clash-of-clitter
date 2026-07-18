@@ -176,6 +176,50 @@ function extractTrials(wikitext) {
   return bullets;
 }
 
+function parseSkillTypes(raw) {
+  if (!raw) return [];
+  const types = [];
+  const re = /\{\{\s*st\s*\|\s*([^}]+)\}\}/gi;
+  let m;
+  while ((m = re.exec(raw))) {
+    const name = m[1].trim();
+    if (name) types.push(name);
+  }
+  return types;
+}
+
+function extractAura(text) {
+  if (!text) return null;
+  const m = String(text).match(/Aura:\s*([A-Za-z]+)/i);
+  return m ? m[1] : null;
+}
+
+function extractSkills(fields) {
+  const name = (fields["Skill Name"] || "").trim();
+  const description = (fields["Skill Description"] || "").trim();
+  const types = parseSkillTypes(fields["Skill Types"] || "");
+  if (!name && !description) return { skills: [], aura: null };
+  const aura = extractAura(description);
+  return {
+    skills: [
+      {
+        name: name || null,
+        description: description || null,
+        types,
+      },
+    ],
+    aura,
+  };
+}
+
+function extractShortDescription(wikitext) {
+  const m = wikitext.match(
+    /Current Description:\s*"([^"]+)"/i
+  );
+  if (m) return m[1].trim();
+  return null;
+}
+
 function imageUrl(filename) {
   if (!filename) return null;
   const name = filename.replace(/^File:/i, "").trim().replace(/ /g, "_");
@@ -204,6 +248,7 @@ async function main() {
       const stageIndex = stages.findIndex((s) => s.toLowerCase() === name.toLowerCase());
       const nextName =
         stageIndex >= 0 && stageIndex < stages.length - 1 ? stages[stageIndex + 1] : null;
+      const { skills, aura } = extractSkills(fields);
       byTitle.set(name, {
         name,
         type: (fields.Type || "").trim() || null,
@@ -215,6 +260,9 @@ async function main() {
         evolvesTo: nextName,
         starsRequired: extractStarsRequired(wikitext, nextName),
         trials: nextName ? extractTrials(wikitext) : [],
+        skills,
+        aura,
+        description: extractShortDescription(wikitext),
         wikiTitle: title,
       });
     } catch (err) {
@@ -263,16 +311,22 @@ async function main() {
         evolvesTo: next,
         starsRequired: next ? fromEntry.starsRequired ?? null : null,
         trials: next ? fromEntry.trials || [] : [],
+        skills: fromEntry.skills || [],
+        aura: fromEntry.aura || null,
+        description: fromEntry.description || null,
       };
     });
 
     // Prefer type/role from stage 1 entry
     const base = line.entries.find((e) => e.stageIndex === 0) || line.entries[0];
+    const lineAura =
+      stages.map((s) => s.aura).find(Boolean) || null;
     lines.push({
       id: line.id,
       type: line.type || base?.type || null,
       role: line.role || base?.role || null,
       rarity: stages[0]?.rarity || null,
+      aura: lineAura,
       stages,
     });
   }

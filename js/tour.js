@@ -1,7 +1,7 @@
 import { t } from "./i18n.js";
 
 /**
- * @param {{ setTab: (tab: "catalog" | "planned") => void }} opts
+ * @param {{ setTab: (tab: "catalog" | "planned" | "team" | "utils") => void }} opts
  */
 export function startAppTour({ setTab }) {
   const createDriver = window.driver?.js?.driver;
@@ -17,6 +17,16 @@ export function startAppTour({ setTab }) {
     document.querySelector("#plan-list .plan-card") ||
     document.querySelector(".planned-bar") ||
     document.getElementById("plan-list");
+  const activityEl =
+    document.getElementById("planned-activity-picker") ||
+    document.querySelector(".planned-activity");
+  const pagerEl =
+    document.getElementById("catalog-pager") ||
+    document.getElementById("line-list");
+  const teamEl = document.getElementById("team-root") || document.getElementById("tab-team");
+  const utilsEl =
+    document.getElementById("utils-pager-host") ||
+    document.getElementById("tab-utils");
 
   /** @param {string} titleKey @param {string} bodyKey */
   const pop = (titleKey, bodyKey) => ({
@@ -75,8 +85,18 @@ export function startAppTour({ setTab }) {
         popover: pop("tourCardTitle", "tourCardBody"),
       },
       {
+        element: pagerEl,
+        popover: pop("tourPagerTitle", "tourPagerBody"),
+        onHighlightStarted: () => setTab("catalog"),
+      },
+      {
         element: "#tab-planned",
         popover: pop("tourPlannedTabTitle", "tourPlannedTabBody"),
+        onHighlightStarted: () => setTab("planned"),
+      },
+      {
+        element: activityEl,
+        popover: pop("tourActivityFilterTitle", "tourActivityFilterBody"),
         onHighlightStarted: () => setTab("planned"),
       },
       {
@@ -88,6 +108,26 @@ export function startAppTour({ setTab }) {
         element: planEl,
         popover: pop("tourPlanListTitle", "tourPlanListBody"),
         onHighlightStarted: () => setTab("planned"),
+      },
+      {
+        element: "#tab-team",
+        popover: pop("tourTeamTitle", "tourTeamBody"),
+        onHighlightStarted: () => setTab("team"),
+      },
+      {
+        element: teamEl,
+        popover: pop("tourTeamTitle", "tourTeamBody"),
+        onHighlightStarted: () => setTab("team"),
+      },
+      {
+        element: "#tab-utils",
+        popover: pop("tourUtilsTitle", "tourUtilsBody"),
+        onHighlightStarted: () => setTab("utils"),
+      },
+      {
+        element: utilsEl,
+        popover: pop("tourUtilsTitle", "tourUtilsBody"),
+        onHighlightStarted: () => setTab("utils"),
       },
       {
         popover: pop("tourDoneTitle", "tourDoneBody"),

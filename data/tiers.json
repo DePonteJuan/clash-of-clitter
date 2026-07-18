@@ -1,0 +1,28 @@
+{
+  "updatedAt": "2026-07-18",
+  "source": "Community guides (Games.gg / meta summaries) — not official",
+  "tiers": {
+    "S+": ["Buddi", "Dewgrub", "Punchimp", "Taptail", "Voltfawn"],
+    "S": [
+      "Fluffle",
+      "Frostnip",
+      "Sealing",
+      "Pandaroo",
+      "Sparkit",
+      "Ashlarva",
+      "Blueflick",
+      "Cheerling"
+    ],
+    "A": [
+      "Droppit",
+      "Frugling",
+      "Goonbug",
+      "Manteeny",
+      "Rubblet",
+      "Cactobud",
+      "Drilleroo",
+      "Shellshy",
+      "Zaplet"
+    ]
+  }
+}

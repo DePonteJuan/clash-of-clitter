@@ -173,6 +173,37 @@ def extract_trials(wikitext: str) -> list[str]:
     return bullets
 
 
+def parse_skill_types(raw: str) -> list[str]:
+    if not raw:
+        return []
+    return [m.strip() for m in re.findall(r"\{\{\s*st\s*\|\s*([^}]+)\}\}", raw, re.I) if m.strip()]
+
+
+def extract_aura(text: str | None) -> str | None:
+    if not text:
+        return None
+    m = re.search(r"Aura:\s*([A-Za-z]+)", text, re.I)
+    return m.group(1) if m else None
+
+
+def extract_skills(fields: dict[str, str]) -> tuple[list[dict], str | None]:
+    name = (fields.get("Skill Name") or "").strip()
+    description = (fields.get("Skill Description") or "").strip()
+    types = parse_skill_types(fields.get("Skill Types") or "")
+    if not name and not description:
+        return [], None
+    aura = extract_aura(description)
+    return (
+        [{"name": name or None, "description": description or None, "types": types}],
+        aura,
+    )
+
+
+def extract_short_description(wikitext: str) -> str | None:
+    m = re.search(r'Current Description:\s*"([^"]+)"', wikitext, re.I)
+    return m.group(1).strip() if m else None
+
+
 def image_url(filename: str | None) -> str | None:
     if not filename:
         return None
@@ -207,6 +238,7 @@ def main() -> None:
             next_name = (
                 stages[stage_index + 1] if stage_index < len(stages) - 1 else None
             )
+            skills, aura = extract_skills(fields)
             by_title[name] = {
                 "name": name,
                 "type": (fields.get("Type") or "").strip() or None,
@@ -218,6 +250,9 @@ def main() -> None:
                 "evolvesTo": next_name,
                 "starsRequired": extract_stars_required(wikitext, next_name),
                 "trials": extract_trials(wikitext) if next_name else [],
+                "skills": skills,
+                "aura": aura,
+                "description": extract_short_description(wikitext),
                 "wikiTitle": title,
             }
         except Exception as err:  # noqa: BLE001
@@ -271,18 +306,23 @@ def main() -> None:
                     "evolvesTo": nxt,
                     "starsRequired": from_entry.get("starsRequired") if nxt else None,
                     "trials": from_entry.get("trials") or [] if nxt else [],
+                    "skills": from_entry.get("skills") or [],
+                    "aura": from_entry.get("aura"),
+                    "description": from_entry.get("description"),
                 }
             )
         base = next(
             (e for e in line["entries"] if e["stageIndex"] == 0),
             line["entries"][0] if line["entries"] else None,
         )
+        line_aura = next((s.get("aura") for s in stages_out if s.get("aura")), None)
         lines.append(
             {
                 "id": line["id"],
                 "type": line["type"] or (base or {}).get("type"),
                 "role": line["role"] or (base or {}).get("role"),
                 "rarity": stages_out[0]["rarity"] if stages_out else None,
+                "aura": line_aura,
                 "stages": stages_out,
             }
         )

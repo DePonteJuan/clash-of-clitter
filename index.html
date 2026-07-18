@@ -108,6 +108,30 @@
           <span data-i18n="tabPlanned">Planeados</span>
           <span class="tab-count" id="plan-count">0</span>
         </button>
+        <button
+          type="button"
+          class="tab"
+          role="tab"
+          id="tab-team"
+          aria-selected="false"
+          aria-controls="panel-team"
+          data-tab="team"
+          data-i18n="tabTeam"
+        >
+          Equipo
+        </button>
+        <button
+          type="button"
+          class="tab"
+          role="tab"
+          id="tab-utils"
+          aria-selected="false"
+          aria-controls="panel-utils"
+          data-tab="utils"
+          data-i18n="tabUtils"
+        >
+          Utilidades
+        </button>
       </nav>
 
       <section
@@ -204,6 +228,7 @@
         </div>
 
         <div id="line-list" class="line-list" aria-live="polite"></div>
+        <div id="catalog-pager" class="catalog-pager" hidden></div>
       </section>
 
       <section
@@ -221,7 +246,40 @@
             Actualizar estrellas
           </button>
         </div>
+        <div class="filter-row planned-activity">
+          <span class="filter-row-label" data-i18n="plannedActivity"
+            >Actividad</span
+          >
+          <div
+            class="chip-picker"
+            id="planned-activity-picker"
+            role="listbox"
+            data-i18n-aria="plannedActivity"
+            aria-label="Filtrar por actividad del trial"
+          ></div>
+        </div>
         <div id="plan-list" class="plan-list"></div>
+      </section>
+
+      <section
+        id="panel-team"
+        class="tab-panel"
+        role="tabpanel"
+        aria-labelledby="tab-team"
+        hidden
+      >
+        <div id="team-root"></div>
+      </section>
+
+      <section
+        id="panel-utils"
+        class="tab-panel"
+        role="tabpanel"
+        aria-labelledby="tab-utils"
+        hidden
+      >
+        <div id="utils-pager-host"></div>
+        <div id="utils-root"></div>
       </section>
 
       <p class="footer-note">
@@ -263,6 +321,21 @@
           ×
         </button>
         <div id="wizard-body"></div>
+      </div>
+    </dialog>
+
+    <dialog id="team-picker-modal" class="team-picker-modal">
+      <div class="team-picker-sheet">
+        <button
+          type="button"
+          class="detail-close"
+          id="team-picker-close"
+          data-i18n-aria="close"
+          aria-label="Cerrar"
+        >
+          ×
+        </button>
+        <div id="team-picker-body"></div>
       </div>
     </dialog>
 

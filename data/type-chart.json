@@ -1,0 +1,19 @@
+{
+  "updatedAt": "2026-07-18",
+  "note": "Water > Fire > Grass > Rock > Lightning > Water (community/wiki cycle)",
+  "types": ["Water", "Fire", "Grass", "Rock", "Lightning"],
+  "strongAgainst": {
+    "Water": ["Fire"],
+    "Fire": ["Grass"],
+    "Grass": ["Rock"],
+    "Rock": ["Lightning"],
+    "Lightning": ["Water"]
+  },
+  "weakAgainst": {
+    "Water": ["Lightning"],
+    "Fire": ["Water"],
+    "Grass": ["Fire"],
+    "Rock": ["Grass"],
+    "Lightning": ["Rock"]
+  }
+}

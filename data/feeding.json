@@ -1,0 +1,25 @@
+{
+  "updatedAt": "2026-07-18",
+  "source": "https://clashofcritters.wiki.gg/wiki/Tatari",
+  "dailyFeedLimit": 15,
+  "blueMaxStage": 10,
+  "stages": [
+    { "stage": 0, "pointsRequired": 100, "starsRequired": null, "totalFrom": 0, "totalTo": 99 },
+    { "stage": 1, "pointsRequired": 180, "starsRequired": null, "totalFrom": 100, "totalTo": 279 },
+    { "stage": 2, "pointsRequired": 260, "starsRequired": null, "totalFrom": 280, "totalTo": 539 },
+    { "stage": 3, "pointsRequired": 340, "starsRequired": 2, "totalFrom": 540, "totalTo": 879 },
+    { "stage": 4, "pointsRequired": 440, "starsRequired": 4, "totalFrom": 880, "totalTo": 1319 },
+    { "stage": 5, "pointsRequired": 540, "starsRequired": 6, "totalFrom": 1320, "totalTo": 1859 },
+    { "stage": 6, "pointsRequired": 640, "starsRequired": 12, "totalFrom": 1860, "totalTo": 2499 },
+    { "stage": 7, "pointsRequired": 750, "starsRequired": 18, "totalFrom": 2500, "totalTo": 3249 },
+    { "stage": 8, "pointsRequired": 860, "starsRequired": 24, "totalFrom": 3250, "totalTo": 4109 },
+    { "stage": 9, "pointsRequired": 960, "starsRequired": 30, "totalFrom": 4110, "totalTo": 5069 },
+    { "stage": 10, "pointsRequired": 1100, "starsRequired": 36, "totalFrom": 5070, "totalTo": 6169 },
+    { "stage": 11, "pointsRequired": null, "starsRequired": 45, "totalFrom": 6170, "totalTo": null },
+    { "stage": 12, "pointsRequired": null, "starsRequired": 54, "totalFrom": null, "totalTo": null },
+    { "stage": 13, "pointsRequired": null, "starsRequired": 63, "totalFrom": null, "totalTo": null },
+    { "stage": 14, "pointsRequired": null, "starsRequired": 72, "totalFrom": null, "totalTo": null },
+    { "stage": 15, "pointsRequired": null, "starsRequired": 78, "totalFrom": null, "totalTo": null }
+  ],
+  "gradeLetters": ["E", "D", "C", "B", "A", "S"]
+}
