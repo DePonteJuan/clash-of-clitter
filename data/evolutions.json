@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-20T09:27:13.991Z",
+  "updatedAt": "2026-07-27T10:02:49.774Z",
   "source": "https://clashofcritters.wiki.gg",
   "lineCount": 50,
   "lines": [
@@ -1814,32 +1814,21 @@
       "id": "Lullelly",
       "type": "Water",
       "role": "DPS",
-      "rarity": "Purple",
+      "rarity": null,
       "aura": null,
       "stages": [
         {
           "name": "Lullelly",
-          "rarity": "Purple",
+          "rarity": null,
           "image": "Lullelly.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Lullelly.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Lullelly",
           "evolvesTo": "Yawnelly",
-          "starsRequired": 6,
-          "trials": [
-            "Purchase any 5 buildings."
-          ],
-          "skills": [
-            {
-              "name": "Sapping Orb",
-              "description": "Launches a water orb to deal AoE damage. Drains HP from nearby healthy allies to boost orb damage and heal allies with low HP.",
-              "types": [
-                "AoE",
-                "Heal"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Always looks half-asleep. Not from fatigue, but because the colors of the real world are so dull compared to the vibrant coral reefs in Lullelly's dreams."
+          "description": null
         },
         {
           "name": "Yawnelly",
