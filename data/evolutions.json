@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-07-27T10:02:49.774Z",
+  "updatedAt": "2026-08-03T09:58:11.505Z",
   "source": "https://clashofcritters.wiki.gg",
   "lineCount": 50,
   "lines": [
@@ -1730,25 +1730,16 @@
         },
         {
           "name": "Kangachamp",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Kangachamp.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Kangachamp.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Kangachamp",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Thumpquake",
-              "description": "Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly.",
-              "types": [
-                "AoE",
-                "Fragile"
-              ]
-            }
-          ],
+          "skills": [],
           "aura": null,
-          "description": "Old insecurities are now hidden behind the sunglasses. But when danger nears, instincts kick in and the punches naturally follow. As for the intruders on the ground, all Kangachamp wanted was a little distance."
+          "description": null
         }
       ]
     },
@@ -3371,7 +3362,7 @@
       "type": "Fire",
       "role": "Specialist",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Fire",
       "stages": [
         {
           "name": "Tindercub",
@@ -3428,12 +3419,35 @@
           "image": "Taiglow.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Taiglow.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Taiglow",
-          "evolvesTo": null,
+          "evolvesTo": "Saberheart",
           "starsRequired": null,
           "trials": [],
           "skills": [],
           "aura": null,
           "description": null
+        },
+        {
+          "name": "Saberheart",
+          "rarity": "Rainbow",
+          "image": "Saberheart.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Saberheart.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Saberheart",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Searing Strike",
+              "description": "Uses a chi attack to deal AoE damage. Can dash forward and inflict Burn, recovering HP on hit. When in Danger, retreats and meditates to heal over time. Saberheart carries Aura: Fire whenever on the field.",
+              "types": [
+                "AoE",
+                "Heal",
+                "Burn"
+              ]
+            }
+          ],
+          "aura": "Fire",
+          "description": "Without any internal meditation, Saberheart's mind has long since been tempered to perfection through countless trials. That powerful, blazing flame can burn through the darkness at will, unleashing a flurry of fiery butterflies dancing through the air."
         }
       ]
     },
