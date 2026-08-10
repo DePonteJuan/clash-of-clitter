@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-03T09:58:11.505Z",
+  "updatedAt": "2026-08-10T07:52:58.826Z",
   "source": "https://clashofcritters.wiki.gg",
   "lineCount": 50,
   "lines": [
@@ -1527,27 +1527,16 @@
         },
         {
           "name": "Watchroo",
-          "rarity": "Gold",
+          "rarity": null,
           "image": "Watchroo.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Watchroo.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Watchroo",
           "evolvesTo": "Bastogard",
-          "starsRequired": 18,
-          "trials": [
-            "Feed Watchroo to increase stats 3 times.",
-            "In Island Gold Rush use 5,000 energy drinks."
-          ],
-          "skills": [
-            {
-              "name": "Muck Orb",
-              "description": "Continuously fires mud balls. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.",
-              "types": [
-                "DMG Reduction"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "After taking down quite a few Zobos, Watchroo has grown much bolder and even dares to provoke them. Watching Zobos scramble through the dunes, only to lose track of a darting Watchroo? Never gets old."
+          "description": null
         },
         {
           "name": "Bastogard",
@@ -1678,7 +1667,7 @@
       "type": "Rock",
       "role": "Guardian",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Rock",
       "stages": [
         {
           "name": "Joeyo",
@@ -1705,20 +1694,34 @@
         },
         {
           "name": "Puncharoo",
-          "rarity": "Gold",
+          "rarity": null,
           "image": "Puncharoo.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Puncharoo.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Puncharoo",
           "evolvesTo": "Kangachamp",
-          "starsRequired": 18,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Kangachamp",
+          "rarity": "Red",
+          "image": "Kangachamp.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Kangachamp.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Kangachamp",
+          "evolvesTo": "Kaiseroo",
+          "starsRequired": 36,
           "trials": [
-            "Feed Puncharoo to increase stats 3 times.",
-            "In Island Gold Rush use 5,000 energy drinks."
+            "Feed this Tatari to B quality.",
+            "Play Treasure Hunt (Dig up treasure x120) or Cozy Farm (Use Fertilizer x7200).",
+            "Defeat 400 enemies in Island Goldrush. Become unstoppable!"
           ],
           "skills": [
             {
-              "name": "Knockabout",
-              "description": "Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged.",
+              "name": "Thumpquake",
+              "description": "Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly.",
               "types": [
                 "AoE",
                 "Fragile"
@@ -1726,20 +1729,29 @@
             }
           ],
           "aura": null,
-          "description": "Gifted with incredible talent yet painfully shy, Puncharoo was eventually spotted by [[Pyroprawn]] and taken in for training. Unfortunately, Coach [[Capobeetle]]'s sessions tend to end early, as regular punch bags don't stand a chance against that killer strength."
+          "description": "Old insecurities are now hidden behind the sunglasses. But when danger nears, instincts kick in and the punches naturally follow. As for the intruders on the ground, all Kangachamp wanted was a little distance."
         },
         {
-          "name": "Kangachamp",
-          "rarity": null,
-          "image": "Kangachamp.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Kangachamp.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Kangachamp",
+          "name": "Kaiseroo",
+          "rarity": "Rainbow",
+          "image": "Kaiseroo.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Kaiseroo.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Kaiseroo",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
+          "skills": [
+            {
+              "name": "Pulverpunch",
+              "description": "Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged. Sometimes reaches full charge instantly. Kaiseroo carries Aura: Rock whenever on the field.",
+              "types": [
+                "AoE",
+                "Fragile"
+              ]
+            }
+          ],
+          "aura": "Rock",
+          "description": "When trapped in a corner with allies needing protection, panic gave way to total determination. Rather than swinging wildly with eyes closed, Kaiseroo locked onto targets with a focused gaze and unleashed a pulverizing punch that could smash through anything."
         }
       ]
     },
@@ -2163,24 +2175,11 @@
         },
         {
           "name": "Rockwu",
-          "rarity": null,
+          "rarity": "Rainbow",
           "image": "Rockwu.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Rockwu.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Rockwu",
-          "evolvesTo": "Rockong",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
-        },
-        {
-          "name": "Rockong",
-          "rarity": "Rainbow",
-          "image": "Rockong.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Rockong.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Rockong",
-          "evolvesTo": null,
+          "evolvesTo": "Rockong",
           "starsRequired": null,
           "trials": [],
           "skills": [
@@ -2195,6 +2194,19 @@
           ],
           "aura": "Rock",
           "description": "Crowned in gold, Rockong has every Tatari's back. One strike of that majestic staff is all it takes to remind everyone who runs these parts."
+        },
+        {
+          "name": "Rockong",
+          "rarity": null,
+          "image": "Rockong.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Rockong.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Rockong",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
         }
       ]
     },
@@ -3129,7 +3141,7 @@
           "starsRequired": 18,
           "trials": [
             "Feed Buzzbeak to increase stats 3 times.",
-            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x2400 fertilizer)."
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
           ],
           "skills": [
             {
@@ -3795,7 +3807,7 @@
     {
       "id": "Zappur",
       "type": "Lightning",
-      "role": "Guardian",
+      "role": "Support",
       "rarity": "Purple",
       "aura": null,
       "stages": [
