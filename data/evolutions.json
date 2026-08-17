@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-10T07:52:58.826Z",
+  "updatedAt": "2026-08-17T07:07:04.828Z",
   "source": "https://clashofcritters.wiki.gg",
-  "lineCount": 50,
+  "lineCount": 52,
   "lines": [
     {
       "id": "Ashlarva",
@@ -32,7 +32,7 @@
             }
           ],
           "aura": null,
-          "description": "Ashlarva seems more interested in warming up wet companions than in fighting. As for any Zobos that happen to get singed... Well, they should have stayed back."
+          "description": null
         },
         {
           "name": "Firecoil",
@@ -371,22 +371,14 @@
         },
         {
           "name": "Capypapa",
-          "rarity": "Blue",
+          "rarity": null,
           "image": "Capypapa.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Capypapa.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Capypapa",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Zesty Zinger",
-              "description": "Shoots a zesty bullet and peels an orange that heals allies",
-              "types": [
-                "Heal"
-              ]
-            }
-          ],
+          "skills": [],
           "aura": null,
           "description": null
         }
@@ -427,16 +419,30 @@
         },
         {
           "name": "Cheerlet",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Cheerlet.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Cheerlet.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Cheerlet",
           "evolvesTo": "Cheerspring",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Cheerlet to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)."
+          ],
+          "skills": [
+            {
+              "name": "Cheerleader",
+              "description": "Dances continuously, dealing AoE damage while healing nearby allies and granting them Support: ATK & DEF Boost. The first time a nearby ally is in Danger, grants Invincibility within the area.",
+              "types": [
+                "AoE",
+                "Heal",
+                "ATK Boost",
+                "DEF Boost"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "To become a true idol, hard work is a must. Cheerlet practices dancing every day to reach perfection!"
         },
         {
           "name": "Cheerspring",
@@ -554,22 +560,14 @@
         },
         {
           "name": "Cluckeroo",
-          "rarity": "Blue",
+          "rarity": null,
           "image": "Cluckeroo.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Cluckeroo.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Cluckeroo",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Nutri-Shot",
-              "description": "Shoots two seeds, one that inflicts damage, and one that recovers HP.",
-              "types": [
-                "Heal"
-              ]
-            }
-          ],
+          "skills": [],
           "aura": null,
           "description": null
         }
@@ -811,7 +809,7 @@
             }
           ],
           "aura": null,
-          "description": "Droppit prefers peace. When things start feeling too chaotic, a cloud of mist gets released as a gentle hint. A polite, roundabout way of telling the noisy crowd to please, kindly, move along."
+          "description": null
         },
         {
           "name": "Bubbit",
@@ -1148,7 +1146,7 @@
             }
           ],
           "aura": null,
-          "description": "Frugling's idea of hospitality is offering dragon fruits to passing Tatari, not realizing they might pop in their faces and make a huge mess."
+          "description": null
         },
         {
           "name": "Frugatoad",
@@ -1212,6 +1210,75 @@
           "skills": [],
           "aura": null,
           "description": null
+        }
+      ]
+    },
+    {
+      "id": "Fumekit",
+      "type": "Fire",
+      "role": "DPS",
+      "rarity": null,
+      "aura": "Fire",
+      "stages": [
+        {
+          "name": "Fumekit",
+          "rarity": null,
+          "image": "Fumekit.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Fumekit.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Fumekit",
+          "evolvesTo": "Sulfunk",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Sulfunk",
+          "rarity": null,
+          "image": "Sulfunk.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sulfunk.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sulfunk",
+          "evolvesTo": "Magmusk",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Magmusk",
+          "rarity": null,
+          "image": "Magmusk.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Magmusk.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Magmusk",
+          "evolvesTo": "Blastniff",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Blastniff",
+          "rarity": "Rainbow",
+          "image": "Blastniff.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Blastniff.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Blastniff",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Exquisite Fumes",
+              "description": "Emits noxious fumes that continuously deal AoE damage. Fumes often spread and sometimes ignite to deal AoE damage. Blastniff carries Aura: Fire whenever on the field.",
+              "types": [
+                "AoE"
+              ]
+            }
+          ],
+          "aura": "Fire",
+          "description": "The smallest movement could ignite Blastniff's fiery tail when excited. When that happens, get ready for a show complete with fire, smoke, and screams-explosions are an exquisite art, after all."
         }
       ]
     },
@@ -1527,16 +1594,27 @@
         },
         {
           "name": "Watchroo",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Watchroo.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Watchroo.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Watchroo",
           "evolvesTo": "Bastogard",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Watchroo to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ],
+          "skills": [
+            {
+              "name": "Muck Orb",
+              "description": "Continuously fires mud balls. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.",
+              "types": [
+                "DMG Reduction"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "After taking down quite a few Zobos, Watchroo has grown much bolder and even dares to provoke them. Watching Zobos scramble through the dunes, only to lose track of a darting Watchroo? Never gets old."
         },
         {
           "name": "Bastogard",
@@ -1636,14 +1714,27 @@
         },
         {
           "name": "Zenscarab",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Zenscarab.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Zenscarab.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Zenscarab",
           "evolvesTo": "Hierotyrus",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B Tier",
+            "Play Treasure Hunt (120 Dig) or Cozy Farm (7200 Fertilizer)",
+            "In Tatari Catcher, capture 200 Tatari. Get new converts!"
+          ],
+          "skills": [
+            {
+              "name": "Dung Blitz",
+              "description": "Launches dung balls that linger on hit, continuously dealing small AoE damage and inflicting Slow.",
+              "types": [
+                "AoE",
+                "Slow"
+              ]
+            }
+          ],
           "aura": null,
           "description": null
         },
@@ -1916,27 +2007,16 @@
         },
         {
           "name": "Stalkerix",
-          "rarity": "Gold",
+          "rarity": null,
           "image": "Stalkerix.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Stalkerix.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Stalkerix",
           "evolvesTo": "Serrabloom",
-          "starsRequired": 18,
-          "trials": [
-            "Feed Stalkerix to increase stats 3 times.",
-            "Shoot 20,000 pinballs."
-          ],
-          "skills": [
-            {
-              "name": "Triple Slash",
-              "description": "Strikes continuously to deal AoE damage.",
-              "types": [
-                "AoE"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Less a fighter, more an artist. Stalkerix aims to make every defeated opponent fall with grace."
+          "description": null
         },
         {
           "name": "Serrabloom",
@@ -3163,9 +3243,13 @@
           "image": "Toucanzam.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Toucanzam.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Toucanzam",
-          "evolvesTo": null,
-          "starsRequired": null,
-          "trials": [],
+          "evolvesTo": "Technocan",
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Marathon Party (use skateboard x6000) or Fishing Contest (use Fishing Rod x6000).",
+            "In Horde Invasion, upgrade Toucanzam to Lvl. 7 or above for a total of 5 time(s)."
+          ],
           "skills": [
             {
               "name": "Bolt Bond",
@@ -3179,6 +3263,19 @@
           ],
           "aura": null,
           "description": "Toucanzam's song is said to be more than just a song, but a means of communicating with others of the same kind. Which means it is a language only Toucanzam can understand. Would love to know what it is all about!"
+        },
+        {
+          "name": "Technocan",
+          "rarity": null,
+          "image": "Technocan.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Technocan.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Technocan",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
         }
       ]
     },
@@ -3224,7 +3321,7 @@
           ],
           "skills": [
             {
-              "name": "Fizzleflare",
+              "name": "Fizzle Flare",
               "description": "Shoots a ball of fireworks that explodes upon impact.",
               "types": [
                 "Split"
@@ -3302,20 +3399,14 @@
         },
         {
           "name": "Scorchwing",
-          "rarity": "Blue",
+          "rarity": null,
           "image": "Scorchwing.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Scorchwing.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Scorchwing",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Pepper Blaze",
-              "description": "Shoots 5 fireballs in quick succession before resting for a while.",
-              "types": []
-            }
-          ],
+          "skills": [],
           "aura": null,
           "description": null
         }
@@ -3325,21 +3416,32 @@
       "id": "Synthhog",
       "type": "Lightning",
       "role": "Specialist",
-      "rarity": null,
+      "rarity": "Gold",
       "aura": null,
       "stages": [
         {
           "name": "Synthhog",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Synthhog.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Synthhog.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Synthhog",
           "evolvesTo": "Sonarbat",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Synthhog to increase stats 3 times.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards)"
+          ],
+          "skills": [
+            {
+              "name": "Wave Rave",
+              "description": "Inflicts Scouted and Bat: Fragile on enemies over a wide area. When Scouted expires, affected enemies take damage.",
+              "types": [
+                "Fragile"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Thanks to those large ears and sensitive nerves, Synthog notices every tiny sound. Still, more often than not, it is the shadow underfoot that sends everything into a panic."
         },
         {
           "name": "Sonarbat",
@@ -3427,16 +3529,30 @@
         },
         {
           "name": "Taiglow",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Taiglow.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Taiglow.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Taiglow",
           "evolvesTo": "Saberheart",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Use Energy Drink x20,000.",
+            "Initiate or join 20 rally attacks in Island Goldrush."
+          ],
+          "skills": [
+            {
+              "name": "Ember Embrace",
+              "description": "Uses a chi attack to deal AoE damage. Can dash forward and inflict Burn, recovering HP on hit. When in Danger, retreats and meditates to heal over time.",
+              "types": [
+                "AoE",
+                "Heal",
+                "Burn"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "The flames surging from Taiglow's palms are hot enough to deter any foe. When the fire finally dispels the darkness, will those carefree days of chasing butterflies return?"
         },
         {
           "name": "Saberheart",
@@ -3468,7 +3584,7 @@
       "type": "Lightning",
       "role": "DPS",
       "rarity": "Purple",
-      "aura": "Lightning",
+      "aura": null,
       "stages": [
         {
           "name": "Voltfawn",
@@ -3547,25 +3663,16 @@
         },
         {
           "name": "Magnedart",
-          "rarity": "Rainbow",
+          "rarity": null,
           "image": "Magnedart.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Magnedart.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Magnedart",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Super Bolt",
-              "description": "Launches a super lightning lance pierces enemies and inflicts Paralysis. Sometimes the piercing never stops. Magnedart carries Aura: Lightning, increasing the ATK Speed of all allies whenever on the field.",
-              "types": [
-                "Paralyze",
-                "Pierce"
-              ]
-            }
-          ],
-          "aura": "Lightning",
-          "description": "Commanding entire electromagnetic fields in the area, Magnedart is the mightiest of the clan, though leadership leaves little rest. Those dark circles are never going away, huh."
+          "skills": [],
+          "aura": null,
+          "description": null
         }
       ]
     },
@@ -3805,6 +3912,84 @@
       ]
     },
     {
+      "id": "Zaplet",
+      "type": "Lightning",
+      "role": "Specialist",
+      "rarity": "Purple",
+      "aura": null,
+      "stages": [
+        {
+          "name": "Zaplet",
+          "rarity": "Purple",
+          "image": "Zaplet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Zaplet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Zaplet",
+          "evolvesTo": "Synthhog",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Echo Electro",
+              "description": "Inflicts Scouted on enemies over a wide area. When Scouted expires, affected enemies take damage.",
+              "types": []
+            }
+          ],
+          "aura": null,
+          "description": "Unable to fly yet panics at the slightest movement. As such, Zaplet usually ends up hiding in a dark corner after flapping around and bumping into things."
+        },
+        {
+          "name": "Synthhog",
+          "rarity": "Gold",
+          "image": "Synthhog.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Synthhog.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Synthhog",
+          "evolvesTo": "Sonarbat",
+          "starsRequired": 18,
+          "trials": [
+            "Feed Synthhog to increase stats 3 times.",
+            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards)"
+          ],
+          "skills": [
+            {
+              "name": "Wave Rave",
+              "description": "Inflicts Scouted and Bat: Fragile on enemies over a wide area. When Scouted expires, affected enemies take damage.",
+              "types": [
+                "Fragile"
+              ]
+            }
+          ],
+          "aura": null,
+          "description": "Thanks to those large ears and sensitive nerves, Synthog notices every tiny sound. Still, more often than not, it is the shadow underfoot that sends everything into a panic."
+        },
+        {
+          "name": "Sonarbat",
+          "rarity": null,
+          "image": "Sonarbat.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
+          "evolvesTo": "Umbraveil",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Umbraveil",
+          "rarity": null,
+          "image": "Umbraveil.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Umbraveil.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Umbraveil",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        }
+      ]
+    },
+    {
       "id": "Zappur",
       "type": "Lightning",
       "role": "Support",
@@ -3907,7 +4092,7 @@
       "type": "Lightning",
       "role": "DPS",
       "rarity": "Purple",
-      "aura": "Lightning",
+      "aura": null,
       "stages": [
         {
           "name": "Zapuni",
@@ -3984,26 +4169,16 @@
         },
         {
           "name": "Boltallion",
-          "rarity": "Rainbow",
+          "rarity": null,
           "image": "Boltallion.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Boltallion.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Boltallion",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Tidal Shock",
-              "description": "Fires a shock wave that deals follow-up damage and splashes on hit. Splashes increase when a Water enemy is hit. The fewer targets hit by splashes, the higher the follow-up damage. Boltallion carries Aura: Lightning whenever on the field.",
-              "types": [
-                "DMG Boost (Solo)",
-                "Splash",
-                "ATK Speed Boost"
-              ]
-            }
-          ],
-          "aura": "Lightning",
-          "description": "Surprisingly, an even fiercer look came along with new friends. At top speed, Bolatllion's rippling mane generates powerful shockwaves that send dusty Zobos flying. The sound of cheers isn't far behind."
+          "skills": [],
+          "aura": null,
+          "description": null
         }
       ]
     },
