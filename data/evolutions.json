@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-08-24T07:09:40.796Z",
+  "updatedAt": "2026-08-31T13:18:31.220Z",
   "source": "https://clashofcritters.wiki.gg",
-  "lineCount": 56,
+  "lineCount": 58,
   "lines": [
     {
       "id": "Ashlarva",
@@ -232,16 +232,29 @@
         },
         {
           "name": "Sunfleur",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Sunfleur.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sunfleur.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sunfleur",
           "evolvesTo": "Solaflora",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sunfleur to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ],
+          "skills": [
+            {
+              "name": "Sun Kiss",
+              "description": "Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost.",
+              "types": [
+                "Heal",
+                "ATK Boost",
+                "DEF Boost"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Sunfleur doesn't grow two heads after evolving --- that'd be weird! Just climb out the pot and dance. Sun's up, and your Tatari friends need you!"
         },
         {
           "name": "Solaflora",
@@ -536,14 +549,23 @@
         },
         {
           "name": "Embertail",
-          "rarity": null,
+          "rarity": "Blue",
           "image": "Embertail.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Embertail.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Embertail",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [],
+          "skills": [
+            {
+              "name": "Twincone Mine",
+              "description": "Plants a pinecone mine that deals small AoE damage when triggered. Plants a few extra mines at first.",
+              "types": [
+                "AoE",
+                "Planting"
+              ]
+            }
+          ],
           "aura": null,
           "description": null
         }
@@ -961,7 +983,7 @@
       "type": "Water",
       "role": "DPS",
       "rarity": null,
-      "aura": null,
+      "aura": "Water",
       "stages": [
         {
           "name": "Dumbopus",
@@ -978,28 +1000,16 @@
         },
         {
           "name": "Dazopus",
-          "rarity": "Gold",
+          "rarity": null,
           "image": "Dazopus.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Dazopus.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Dazopus",
           "evolvesTo": "Fishopus",
-          "starsRequired": 18,
-          "trials": [
-            "Feed Dazopus to increase stats 3 times.",
-            "Play Fishing Contest (use x2000 fishing rods) or Zobo Shooter (use x400,000 bullet coins)."
-          ],
-          "skills": [
-            {
-              "name": "Reel Catch",
-              "description": "Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals AoE damage when knocked down.",
-              "types": [
-                "AoE",
-                "Summon"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Sometimes, even Dazopus can't explain the strange thoughts that come to mind. I guess that's what you call a walking contradiction."
+          "description": null
         },
         {
           "name": "Fishopus",
@@ -1007,12 +1017,34 @@
           "image": "Fishopus.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Fishopus.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Fishopus",
-          "evolvesTo": null,
+          "evolvesTo": "Lordopus",
           "starsRequired": null,
           "trials": [],
           "skills": [],
           "aura": null,
           "description": null
+        },
+        {
+          "name": "Lordopus",
+          "rarity": "Rainbow",
+          "image": "Lordopus.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lordopus.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lordopus",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "The King's Fish",
+              "description": "Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals large AoE damage when knocked down. Lordopus carries Aura: Water whenever on the battlefield.",
+              "types": [
+                "AoE",
+                "Summon"
+              ]
+            }
+          ],
+          "aura": "Water",
+          "description": "The king is crowned, and the chaotic tentacles of the past are now the throne of the sovereign. With just one thought, Lordopus can command the ebb and flow of all the seas."
         }
       ]
     },
@@ -1377,34 +1409,55 @@
       "id": "Fumekit",
       "type": "Fire",
       "role": "DPS",
-      "rarity": null,
+      "rarity": "Purple",
       "aura": "Fire",
       "stages": [
         {
           "name": "Fumekit",
-          "rarity": null,
+          "rarity": "Purple",
           "image": "Fumekit.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Fumekit.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Fumekit",
           "evolvesTo": "Sulfunk",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 6,
+          "trials": [
+            "Feed Fumekit Cookie x30."
+          ],
+          "skills": [
+            {
+              "name": "Stinky Fumes",
+              "description": "Emits noxious fumes that continuously deal AoE damage. Fumes sometimes ignite to deal AoE damage.",
+              "types": [
+                "AoE"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Thanks to a short digestive track, Fumekit tends to let out gas soon after eating. Joins in when everyone turns to look for the culprit, never once expecting the obvious."
         },
         {
           "name": "Sulfunk",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Sulfunk.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sulfunk.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sulfunk",
           "evolvesTo": "Magmusk",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sulfunk to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ],
+          "skills": [
+            {
+              "name": "Flammable Fumes",
+              "description": "Emits noxious fumes that continuously deal AoE damage. Fumes occasionally spread sometimes ignite to deal AoE damage.",
+              "types": [
+                "AoE"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Sulfunk never holds back those natural urges. When met with the stunned faces of nearby Tatari, Sulfunk would simply give an innocent look. Just think of it as improvised music."
         },
         {
           "name": "Magmusk",
@@ -1476,29 +1529,56 @@
         },
         {
           "name": "Trippet",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Trippet.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Trippet.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Trippet",
           "evolvesTo": "Hyphoria",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Trippet to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ],
+          "skills": [
+            {
+              "name": "Tripping Ring",
+              "description": "Emits spreading spores that continuously deal AoE damage. Deals a small amount of damage to allies in range, but also grants them Spore: ATK and Speed Boost.",
+              "types": [
+                "AoE",
+                "ATK Boost",
+                "ATK Speed Boost"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Trippet fights alongside the trainer because Zobos are just too loud and annoying. Yet for some reason, those spores seem to make things worse and have Zobos all wired up. Sometimes they even start dancing."
         },
         {
           "name": "Hyphoria",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Hyphoria.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Hyphoria.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Hyphoria",
           "evolvesTo": "Ecstamira",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "TBA"
+          ],
+          "skills": [
+            {
+              "name": "Peaking Ring",
+              "description": "Emits spreading spores that continuously deal AoE damage and inflict Spore: Fragile. Deals a small amount of damage to allies in range, but also grants them Spore: ATK Speed Boost and Spore: DMG Reduction.",
+              "types": [
+                "AoE",
+                "Fragile",
+                "ATK Speed Boost",
+                "DMG Reduction"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "The illusions woven by Hyphoria are neither dark nor frightening. On the contrary, they form a radiant world of happiness. If reality is too painful, why not drift into a beautiful dream for eternity?"
         },
         {
           "name": "Ecstamira",
@@ -1531,7 +1611,7 @@
       "type": "Rock",
       "role": "Guardian",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Rock",
       "stages": [
         {
           "name": "Gibber",
@@ -1609,15 +1689,24 @@
         },
         {
           "name": "Terraton",
-          "rarity": null,
+          "rarity": "Rainbow",
           "image": "Terraton.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Terraton.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Terraton",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [],
-          "aura": null,
+          "skills": [
+            {
+              "name": "Rock Swirl",
+              "description": "Launches a piercing spinning shell that grants all allies it passes a Shell Shield. Terraton carries Aura: Rock, reducing damage taken for all allies whenever on the field.",
+              "types": [
+                "Shield",
+                "Pierce"
+              ]
+            }
+          ],
+          "aura": "Rock",
           "description": null
         }
       ]
@@ -1818,6 +1907,78 @@
       ]
     },
     {
+      "id": "Hootlet",
+      "type": "Grass",
+      "role": "Support",
+      "rarity": "Purple",
+      "aura": null,
+      "stages": [
+        {
+          "name": "Hootlet",
+          "rarity": "Purple",
+          "image": "Hootlet.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hootlet.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hootlet",
+          "evolvesTo": "Tikowl",
+          "starsRequired": 6,
+          "trials": [
+            "Log in for 2 days in a row."
+          ],
+          "skills": [
+            {
+              "name": "Dawn Call",
+              "description": "Creates an AoE terrain in front. Enemies in the terrain take damage and are inflicted with stackable Slowdown.",
+              "types": [
+                "AoE",
+                "Slow"
+              ]
+            }
+          ],
+          "aura": null,
+          "description": "Hootlet believes in time magic and the tail pendulum is a most cherished treasure. Now watch and listen closely... er, was that time magic or sleep magic?"
+        },
+        {
+          "name": "Tikowl",
+          "rarity": null,
+          "image": "Tikowl.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Tikowl.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Tikowl",
+          "evolvesTo": "Chronerva",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Chronerva",
+          "rarity": null,
+          "image": "Chronerva.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Chronerva.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Chronerva",
+          "evolvesTo": "Hypnostrix",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Hypnostrix",
+          "rarity": null,
+          "image": "Hypnostrix.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Hypnostrix.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Hypnostrix",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        }
+      ]
+    },
+    {
       "id": "Humbug",
       "type": "Rock",
       "role": "DPS",
@@ -1833,7 +1994,7 @@
           "evolvesTo": "Humbleetle",
           "starsRequired": 6,
           "trials": [
-            "Land 10 pinballs in the Star Slot."
+            "Land 10 pinballs in the Star Slot. Easy peasy!"
           ],
           "skills": [
             {
@@ -1845,7 +2006,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "To the confusion of other Tatari, Humbug favors a strange dark substance, supposedly carrying the sweetness of sunshine, grass, and time itself."
         },
         {
           "name": "Humbleetle",
@@ -1882,7 +2043,7 @@
           "starsRequired": 36,
           "trials": [
             "Feed this Tatari to B Tier",
-            "Play Treasure Hunt (120 Dig) or Cozy Farm (7200 Fertilizer)",
+            "Play Treasure Hunt (Dig up treasure x120) or Cozy Farm (Use Fertilizer x7200)",
             "In Tatari Catcher, capture 200 Tatari. Get new converts!"
           ],
           "skills": [
@@ -1896,7 +2057,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "The halo atop Zenscarab's head beguiles approaching Tatari into becoming followers. To Zenscarab, there are only two kinds of Tatari: those who love the signature dish, and those who have not tasted it yet."
         },
         {
           "name": "Hierotyrus",
@@ -2038,16 +2199,27 @@
         },
         {
           "name": "Nekowatt",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Nekowatt.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Nekowatt.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Nekowatt",
           "evolvesTo": "Voltazar",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Nekowatt to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)"
+          ],
+          "skills": [
+            {
+              "name": "Zapfist",
+              "description": "Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range. Kittazap shares the Paw Pals bond whenever on the field.",
+              "types": [
+                "AoE"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Some Tatari blur the line between work and life. Work should serve life, and too much of it would drain the 'watt' from Nekowatt!"
         },
         {
           "name": "Voltazar",
@@ -2153,7 +2325,7 @@
           "starsRequired": 18,
           "trials": [
             "Feed Yawnelly to increase stats 3 times.",
-            "Play Fishing Contest (use x2000 fishing rods) or Snowboard Sprint/Marathon Party (use x2000 boards)."
+            "Play Fishing Contest (use Fishing Rod x2000) or Marathon Party (use skateboard x2000)."
           ],
           "skills": [
             {
@@ -2428,6 +2600,78 @@
       ]
     },
     {
+      "id": "Poakie",
+      "type": "Fire",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "aura": null,
+      "stages": [
+        {
+          "name": "Poakie",
+          "rarity": "Purple",
+          "image": "Poakie.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Poakie.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Poakie",
+          "evolvesTo": "Sizzribb",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Poakie 10 Spicy Sodas."
+          ],
+          "skills": [
+            {
+              "name": "Sizzle Bubble",
+              "description": "Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage.",
+              "types": [
+                "AoE",
+                "Burn"
+              ]
+            }
+          ],
+          "aura": null,
+          "description": "Enjoys drifting in the hot springs at the foot of a volcano. Sometimes gets pushed along by the sizzling bubbles before realizing the surroundings have changed."
+        },
+        {
+          "name": "Sizzribb",
+          "rarity": null,
+          "image": "Sizzribb.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sizzribb.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sizzribb",
+          "evolvesTo": "Lickflicker",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Lickflicker",
+          "rarity": null,
+          "image": "Lickflicker.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lickflicker.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lickflicker",
+          "evolvesTo": "Ignitoad",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Ignitoad",
+          "rarity": null,
+          "image": "Ignitoad.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ignitoad.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ignitoad",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        }
+      ]
+    },
+    {
       "id": "Punchimp",
       "type": "Rock",
       "role": "DPS",
@@ -2596,7 +2840,7 @@
       "type": "Fire",
       "role": "Guardian",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Fire",
       "stages": [
         {
           "name": "Pyropup",
@@ -2673,16 +2917,26 @@
         },
         {
           "name": "Pyrodaemon",
-          "rarity": null,
+          "rarity": "Rainbow",
           "image": "Pyrodaemon.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Pyrodaemon.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Pyrodaemon",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
+          "skills": [
+            {
+              "name": "Hell Strike",
+              "description": "Summons fearsome flames that deal large AoE damage and inflict Weak. Pyrodaemon carries Aura: Fire whenever on the field, boosting the ATK of all allies.",
+              "types": [
+                "AoE",
+                "Weaken",
+                "ATK Boost"
+              ]
+            }
+          ],
+          "aura": "Fire",
+          "description": "People imagine Pyrodaemon's long howl as a call from the underworld. What they don't know is that underneath the fiery exterior is just an excited puppy (or puppies) all the same."
         }
       ]
     },
@@ -3669,7 +3923,7 @@
           "starsRequired": 18,
           "trials": [
             "Feed Synthhog to increase stats 3 times.",
-            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards)"
+            "Play Fishing Contest (use Fishing Rod x6000) or Marathon Party (use skateboard x6000)."
           ],
           "skills": [
             {
@@ -3685,26 +3939,16 @@
         },
         {
           "name": "Sonarbat",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Sonarbat.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
           "evolvesTo": "Umbraveil",
-          "starsRequired": 36,
-          "trials": [
-            "TBA"
-          ],
-          "skills": [
-            {
-              "name": "Sonar Power",
-              "description": "Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage.",
-              "types": [
-                "Fragile"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "At night, when the Tatari are fast asleep, Sonarbat unleashes those powerful sound waves to knock out any Zobos and ensure absolute peace. Now if only [[Snoozebo]] didn't make so much noise..."
+          "description": null
         },
         {
           "name": "Umbraveil",
@@ -3726,7 +3970,7 @@
       "type": "Rock",
       "role": "DPS",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Rock",
       "stages": [
         {
           "name": "Taptail",
@@ -3737,7 +3981,7 @@
           "evolvesTo": "Rattlecoil",
           "starsRequired": 6,
           "trials": [
-            "Kill 300 Zobos in map stages."
+            "Kill 300 Zobos while clearing stages."
           ],
           "skills": [
             {
@@ -3770,12 +4014,35 @@
           "image": "Clangnaga.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Clangnaga.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Clangnaga",
-          "evolvesTo": null,
+          "evolvesTo": "Dharmadder",
           "starsRequired": null,
           "trials": [],
           "skills": [],
           "aura": null,
           "description": null
+        },
+        {
+          "name": "Dharmadder",
+          "rarity": "Rainbow",
+          "image": "Dharmadder.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Dharmadder.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Dharmadder",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Karmic Barrage",
+              "description": "Slowly fires a few sound waves, then rapidly fires several. The rapid waves can pierce enemies, with a chance to inflict Stun. Dharmadder carries Aura: Rock whenever on the field.",
+              "types": [
+                "AoE",
+                "Stun",
+                "Pierce"
+              ]
+            }
+          ],
+          "aura": "Rock",
+          "description": "What is karma exactly? Dharmadder knows it's not erasing the past, but making better choices for the future. When the mallet drops, the hollow echo can bring serenity to all listeners. Tap tap, Dharmadder's got plenty of patience."
         }
       ]
     },
@@ -4274,7 +4541,7 @@
           "starsRequired": 18,
           "trials": [
             "Feed Synthhog to increase stats 3 times.",
-            "Play Fishing Contest (use x6000 fishing rods) or Snowboard Sprint/Marathon Party (use x6000 boards)"
+            "Play Fishing Contest (use Fishing Rod x6000) or Marathon Party (use skateboard x6000)."
           ],
           "skills": [
             {
@@ -4290,26 +4557,16 @@
         },
         {
           "name": "Sonarbat",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Sonarbat.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
           "evolvesTo": "Umbraveil",
-          "starsRequired": 36,
-          "trials": [
-            "TBA"
-          ],
-          "skills": [
-            {
-              "name": "Sonar Power",
-              "description": "Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage.",
-              "types": [
-                "Fragile"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "At night, when the Tatari are fast asleep, Sonarbat unleashes those powerful sound waves to knock out any Zobos and ensure absolute peace. Now if only [[Snoozebo]] didn't make so much noise..."
+          "description": null
         },
         {
           "name": "Umbraveil",
