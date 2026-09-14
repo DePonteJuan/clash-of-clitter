@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-07T12:08:55.341Z",
+  "updatedAt": "2026-09-14T12:25:00.809Z",
   "source": "https://clashofcritters.wiki.gg",
-  "lineCount": 53,
+  "lineCount": 54,
   "lines": [
     {
       "id": "Ashlarva",
@@ -367,7 +367,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "It's not that Capywata is slow. The world is just moving too fast."
         },
         {
           "name": "Capypapa",
@@ -515,7 +515,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "With a particular penchant for explosives, Cindermunk is sometimes nicknamed Cinderpunk. The only problem is remembering where all those pinecone mines are buried."
         },
         {
           "name": "Embertail",
@@ -556,7 +556,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "'Clucky's leaves can photosynthesize, but that is not an excuse to skip feeding time.' -Tatari Observation Diary."
         },
         {
           "name": "Cluckeroo",
@@ -718,6 +718,19 @@
           "image": "Waveflutter.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Waveflutter.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Waveflutter",
+          "evolvesTo": "Morphanessa",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Morphanessa",
+          "rarity": null,
+          "image": "Morphanessa.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Morphanessa.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Morphanessa",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
@@ -754,7 +767,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "Dozy sometimes nods off mid-fight against [[Zobos]], but that doesn't seem to slow down the Zobo-bashing one bit."
         },
         {
           "name": "Snoozebo",
@@ -776,7 +789,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "Some Tatari have spotted Snoozebo singing and dancing late at night. Maybe that explains all the daytime naps."
         }
       ]
     },
@@ -1052,29 +1065,16 @@
         },
         {
           "name": "Galewether",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Galewether.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Galewether.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Galewether",
           "evolvesTo": "Cosmoram",
-          "starsRequired": 36,
-          "trials": [
-            "Feed this Tatari to B quality.",
-            "Play Snowboard Sprint/Marathon Party (use x6000 boards) or Fishing Contest (use x6000 fishing rods).",
-            "Feed 60 Fluff Candy."
-          ],
-          "skills": [
-            {
-              "name": "Gale Storm",
-              "description": "Summons white clouds that continuously deal small AoE damage with lightning. White clouds will upgrade to dark clouds that inflict Paralysis. Fires lightning arcs to move clouds.",
-              "types": [
-                "AoE",
-                "Paralyze"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Now when Galewether gets all heated up, it's a much bigger problem. Well, at least the scorched surroundings mean no one would come close to make small chat anymore."
+          "description": null
         },
         {
           "name": "Cosmoram",
@@ -1673,29 +1673,16 @@
         },
         {
           "name": "Bastogard",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Bastogard.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Bastogard.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Bastogard",
           "evolvesTo": "Cratzar",
-          "starsRequired": 36,
-          "trials": [
-            "Raise this Tatari to B quality.",
-            "Play Treasure Hunt (dig up 120 treasure) or Cozy Farm (use x7200 fertilizer).",
-            "Obtain 50 more Tatari Wishboxes."
-          ],
-          "skills": [
-            {
-              "name": "Sludge Storm",
-              "description": "Continuously fires mud balls, occasionally inflicting Blind. Stops attacking when enemies are nearby, but gains Burrow: DMG Reduction.",
-              "types": [
-                "DMG Reduction",
-                "Blind"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Bastogard once struck gold underground. After hearing how valuable it used to be in the human world, a fortress was dug out to store the precious ore."
+          "description": null
         },
         {
           "name": "Cratzar",
@@ -1960,6 +1947,88 @@
       ]
     },
     {
+      "id": "Lollama",
+      "type": "Grass",
+      "role": "DPS",
+      "rarity": "Purple",
+      "aura": "Grass",
+      "stages": [
+        {
+          "name": "Lollama",
+          "rarity": "Purple",
+          "image": "Lollama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lollama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lollama",
+          "evolvesTo": "Slobberlama",
+          "starsRequired": 6,
+          "trials": [
+            "Bring Lollama to Horde Invasion 3 times. Drown those Zobos in slobber!"
+          ],
+          "skills": [
+            {
+              "name": "Tongue Out",
+              "description": "Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Slow.",
+              "types": [
+                "AoE",
+                "Slow"
+              ]
+            }
+          ],
+          "aura": null,
+          "description": "The drool that's always hanging from Lollama's mouth drives clean-minded Tatari away. In theory, Lollama should be very popular among [[Zobos]]."
+        },
+        {
+          "name": "Slobberlama",
+          "rarity": null,
+          "image": "Slobberlama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Slobberlama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Slobberlama",
+          "evolvesTo": "Ptooielama",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Ptooielama",
+          "rarity": null,
+          "image": "Ptooielama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ptooielama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ptooielama",
+          "evolvesTo": "Blechlama",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Blechlama",
+          "rarity": "Rainbow",
+          "image": "Blechlama.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Blechlama.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Blechlama",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Drool Doozy",
+              "description": "Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind. Also creates a Slow Zone. Blechlama carries Aura: Grass whenever on the field.",
+              "types": [
+                "AoE",
+                "Blind",
+                "Slow"
+              ]
+            }
+          ],
+          "aura": "Grass",
+          "description": "All that overgrown fur is home to a thriving micro ecosystem. Don't shy away when Blechlama charges at you carrying the raw, powerful scent of nature-embrace the call of the untamed wild!"
+        }
+      ]
+    },
+    {
       "id": "Lullelly",
       "type": "Water",
       "role": "DPS",
@@ -2138,7 +2207,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "'The perfect Mudrump life: mud, rolling in mud, pelting anyone annoying with mud did I mention more mud?' -Mudrump's personal creed."
         },
         {
           "name": "Rockhog",
@@ -3117,7 +3186,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "That little pear head is always packed with the strangest worries. Funny, considering Solpear never even had a job before."
         },
         {
           "name": "Pearpair",
@@ -3450,7 +3519,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "Do not make eye contact with Sparkrow for more than a second. Anything longer is considered a challenge. After that, start worrying about dodging fireballs."
         },
         {
           "name": "Scorchwing",
@@ -4293,7 +4362,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "As the very first Tatari, a slight tendency to short circuit here and there is perfectly understandable."
         },
         {
           "name": "Zapooch",
@@ -4314,7 +4383,7 @@
             }
           ],
           "aura": null,
-          "description": null
+          "description": "Zapooch faithfully patrols camp every day. Anyone bold enough to cause trouble will be zapped into a sea urchin."
         }
       ]
     }
