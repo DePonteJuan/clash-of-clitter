@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-09-21T12:31:36.386Z",
+  "updatedAt": "2026-09-28T13:30:51.624Z",
   "source": "https://clashofcritters.wiki.gg",
-  "lineCount": 56,
+  "lineCount": 57,
   "lines": [
     {
       "id": "Ashlarva",
@@ -1063,7 +1063,7 @@
       "type": "Fire",
       "role": "DPS",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Fire",
       "stages": [
         {
           "name": "Flameow",
@@ -1118,12 +1118,34 @@
           "image": "Silversear.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Silversear.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Silversear",
-          "evolvesTo": null,
+          "evolvesTo": "Cinderclaw",
           "starsRequired": null,
           "trials": [],
           "skills": [],
           "aura": null,
           "description": null
+        },
+        {
+          "name": "Cinderclaw",
+          "rarity": "Rainbow",
+          "image": "Cinderclaw.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Cinderclaw.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Cinderclaw",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Meow Boom",
+              "description": "Throws jewels. Sometimes, the jewels can bounce an increasing number of times between enemies. When the max number of bounces is reached, grants all allies Searpaw: ATK Boost. Silversear shares the Paw Pals bond whenever on the field. Cinderclaw carries Aura: Fire whenever on the field.",
+              "types": [
+                "Chain",
+                "ATK Boost"
+              ]
+            }
+          ],
+          "aura": "Fire",
+          "description": "People say that if you gaze into those eyes for too long, the dark thoughts hidden in the depths of your mind will ignite. Other Tatari keep their distance--which suits Cinderclaw just fine. Whenever the camp is in danger, however, the same terrifying flames are the first to engulf enemies."
         }
       ]
     },
@@ -1417,34 +1439,55 @@
       "id": "Fumekit",
       "type": "Fire",
       "role": "DPS",
-      "rarity": null,
+      "rarity": "Purple",
       "aura": "Fire",
       "stages": [
         {
           "name": "Fumekit",
-          "rarity": null,
+          "rarity": "Purple",
           "image": "Fumekit.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Fumekit.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Fumekit",
           "evolvesTo": "Sulfunk",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 6,
+          "trials": [
+            "Feed Fumekit Cookie x30."
+          ],
+          "skills": [
+            {
+              "name": "Stinky Fumes",
+              "description": "Emits noxious fumes that continuously deal AoE damage. Fumes sometimes ignite to deal AoE damage.",
+              "types": [
+                "AoE"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Thanks to a short digestive track, Fumekit tends to let out gas soon after eating. Joins in when everyone turns to look for the culprit, never once expecting the obvious."
         },
         {
           "name": "Sulfunk",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Sulfunk.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sulfunk.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sulfunk",
           "evolvesTo": "Magmusk",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Sulfunk to increase stats 3 times.",
+            "Play Snowboard Sprint/Marathon Party (use x2000 boards) or Cozy Farm (use x4000 fertilizer)."
+          ],
+          "skills": [
+            {
+              "name": "Flammable Fumes",
+              "description": "Emits noxious fumes that continuously deal AoE damage. Fumes occasionally spread sometimes ignite to deal AoE damage.",
+              "types": [
+                "AoE"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Sulfunk never holds back those natural urges. When met with the stunned faces of nearby Tatari, Sulfunk would simply give an innocent look. Just think of it as improvised music."
         },
         {
           "name": "Magmusk",
@@ -1516,29 +1559,56 @@
         },
         {
           "name": "Trippet",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Trippet.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Trippet.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Trippet",
           "evolvesTo": "Hyphoria",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Trippet to increase stats 3 times.",
+            "Shoot 20,000 pinballs."
+          ],
+          "skills": [
+            {
+              "name": "Tripping Ring",
+              "description": "Emits spreading spores that continuously deal AoE damage. Deals a small amount of damage to allies in range, but also grants them Spore: ATK and Speed Boost.",
+              "types": [
+                "AoE",
+                "ATK Boost",
+                "ATK Speed Boost"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Trippet fights alongside the trainer because Zobos are just too loud and annoying. Yet for some reason, those spores seem to make things worse and have Zobos all wired up. Sometimes they even start dancing."
         },
         {
           "name": "Hyphoria",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Hyphoria.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Hyphoria.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Hyphoria",
           "evolvesTo": "Ecstamira",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Raise this Tatari to B quality.",
+            "TBA"
+          ],
+          "skills": [
+            {
+              "name": "Peaking Ring",
+              "description": "Emits spreading spores that continuously deal AoE damage and inflict Spore: Fragile. Deals a small amount of damage to allies in range, but also grants them Spore: ATK Speed Boost and Spore: DMG Reduction.",
+              "types": [
+                "AoE",
+                "Fragile",
+                "ATK Speed Boost",
+                "DMG Reduction"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "The illusions woven by Hyphoria are neither dark nor frightening. On the contrary, they form a radiant world of happiness. If reality is too painful, why not drift into a beautiful dream for eternity?"
         },
         {
           "name": "Ecstamira",
@@ -1996,16 +2066,28 @@
         },
         {
           "name": "Puncharoo",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Puncharoo.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Puncharoo.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Puncharoo",
           "evolvesTo": "Kangachamp",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Puncharoo to increase stats 3 times.",
+            "In Island Gold Rush use 5,000 energy drinks."
+          ],
+          "skills": [
+            {
+              "name": "Knockabout",
+              "description": "Swings fists to deal AoE damage. Charging increases both damage and range. Inflicts Fragile when fully charged.",
+              "types": [
+                "AoE",
+                "Fragile"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Gifted with incredible talent yet painfully shy, Puncharoo was eventually spotted by [[Pyroprawn]] and taken in for training. Unfortunately, Coach [[Capobeetle]]'s sessions tend to end early, as regular punch bags don't stand a chance against that killer strength."
         },
         {
           "name": "Kangachamp",
@@ -2063,7 +2145,7 @@
       "type": "Lightning",
       "role": "Guardian",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Lightning",
       "stages": [
         {
           "name": "Kittazap",
@@ -2090,16 +2172,28 @@
         },
         {
           "name": "Nekowatt",
-          "rarity": null,
+          "rarity": "Gold",
           "image": "Nekowatt.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Nekowatt.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Nekowatt",
           "evolvesTo": "Voltazar",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 18,
+          "trials": [
+            "Feed Nekowatt to increase stats 3 times.",
+            "Play Treasure Hunt (dig up 70 treasure) or Cozy Farm (use x4200 fertilizer)"
+          ],
+          "skills": [
+            {
+              "name": "Zapfist",
+              "description": "Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range. Kittazap shares the Paw Pals bond whenever on the field.",
+              "types": [
+                "AoE",
+                "ATK Range Boost"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Some Tatari blur the line between work and life. Work should serve life, and too much of it would drain the 'watt' from Nekowatt!"
         },
         {
           "name": "Voltazar",
@@ -2107,12 +2201,36 @@
           "image": "Voltazar.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Voltazar.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Voltazar",
-          "evolvesTo": null,
+          "evolvesTo": "Thunderpaw",
           "starsRequired": null,
           "trials": [],
           "skills": [],
           "aura": null,
           "description": null
+        },
+        {
+          "name": "Thunderpaw",
+          "rarity": "Rainbow",
+          "image": "Thunderpaw.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Thunderpaw.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Thunderpaw",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [
+            {
+              "name": "Fortune's Favor",
+              "description": "Unleashes electrified punches that deal AoE damage. The closer the enemy, the higher the damage. Cooldowns decrease with each strike, and when cooldown reaches the minimum, gains increased ATK Range and grants all allies Voltkitty: DEF Boost. Voltazar shares the Paw Pals bond whenever on the field. Thunderpaw carries Aura: Lightning whenever on the field.",
+              "types": [
+                "AoE",
+                "DEF Boost",
+                "ATK Range Boost",
+                "ATK Speed Boost"
+              ]
+            }
+          ],
+          "aura": "Lightning",
+          "description": "People have built shrines for Thunderpaw, where they present offerings of food and reverently await blessings. With a gentle lift of the paw, a flurry of lightning bolts can erupt from behind. But can Thunderpaw really bring good fortune? Certainly-if you believe in it!"
         }
       ]
     },
@@ -2246,16 +2364,30 @@
         },
         {
           "name": "Souverelle",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Souverelle.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Souverelle.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Souverelle",
           "evolvesTo": "Somnrayna",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use Fishing Rod x6,000) or Zobo Shooter (Use Bullet Coin x600,000).",
+            "Own 5 Water Badges."
+          ],
+          "skills": [
+            {
+              "name": "Guzzle Globe",
+              "description": "Launches a water orb to deal AoE damage. Within a large area, drains HP from healthy allies to boost damage and heal allies with low HP. Occasionally launches a powerful attack.",
+              "types": [
+                "Heal",
+                "AoE",
+                "Buff"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "In fairy tales of the bygone era, a princess always waits for the prince to come to the rescue. But in Souverelle's dream world, a princess has all the power needed to hold back an army. Help is welcome, but hardly necessary."
         },
         {
           "name": "Somnrayna",
@@ -2514,6 +2646,78 @@
       ]
     },
     {
+      "id": "Poakie",
+      "type": "Fire",
+      "role": "Guardian",
+      "rarity": "Purple",
+      "aura": null,
+      "stages": [
+        {
+          "name": "Poakie",
+          "rarity": "Purple",
+          "image": "Poakie.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Poakie.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Poakie",
+          "evolvesTo": "Sizzribb",
+          "starsRequired": 6,
+          "trials": [
+            "Feed Poakie 10 Spicy Sodas."
+          ],
+          "skills": [
+            {
+              "name": "Sizzle Bubble",
+              "description": "Spits flames, dealing AoE damage and inflicting Burn. Sometimes spits flames non-stop, continuously dealing AoE damage.",
+              "types": [
+                "AoE",
+                "Burn"
+              ]
+            }
+          ],
+          "aura": null,
+          "description": "Enjoys drifting in the hot springs at the foot of a volcano. Sometimes gets pushed along by the sizzling bubbles before realizing the surroundings have changed."
+        },
+        {
+          "name": "Sizzribb",
+          "rarity": null,
+          "image": "Sizzribb.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Sizzribb.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Sizzribb",
+          "evolvesTo": "Lickflicker",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Lickflicker",
+          "rarity": null,
+          "image": "Lickflicker.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Lickflicker.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Lickflicker",
+          "evolvesTo": "Ignitoad",
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        },
+        {
+          "name": "Ignitoad",
+          "rarity": null,
+          "image": "Ignitoad.png",
+          "imageUrl": "https://clashofcritters.wiki.gg/images/Ignitoad.png",
+          "wiki": "https://clashofcritters.wiki.gg/wiki/Ignitoad",
+          "evolvesTo": null,
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
+          "aura": null,
+          "description": null
+        }
+      ]
+    },
+    {
       "id": "Punchimp",
       "type": "Rock",
       "role": "DPS",
@@ -2683,7 +2887,7 @@
       "type": "Fire",
       "role": "Guardian",
       "rarity": "Purple",
-      "aura": null,
+      "aura": "Fire",
       "stages": [
         {
           "name": "Pyropup",
@@ -2760,16 +2964,26 @@
         },
         {
           "name": "Pyrodaemon",
-          "rarity": null,
+          "rarity": "Rainbow",
           "image": "Pyrodaemon.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Pyrodaemon.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Pyrodaemon",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
+          "skills": [
+            {
+              "name": "Hell Strike",
+              "description": "Summons fearsome flames that deal large AoE damage and inflict Weak. Pyrodaemon carries Aura: Fire whenever on the field, boosting the ATK of all allies.",
+              "types": [
+                "AoE",
+                "Weaken",
+                "ATK Boost"
+              ]
+            }
+          ],
+          "aura": "Fire",
+          "description": "People imagine Pyrodaemon's long howl as a call from the underworld. What they don't know is that underneath the fiery exterior is just an excited puppy (or puppies) all the same."
         }
       ]
     },
@@ -3782,16 +3996,28 @@
         },
         {
           "name": "Sonarbat",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Sonarbat.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
           "evolvesTo": "Umbraveil",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Marathon Party (use skateboard x6000) or Fishing Contest (Use Fishing Rod x6000).",
+            "In Horde Invasion, upgrade Sonarbat to Lvl 7 or above for a total of 5 times."
+          ],
+          "skills": [
+            {
+              "name": "Sonar Power",
+              "description": "Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage.",
+              "types": [
+                "Fragile"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "At night, when the Tatari are fast asleep, Sonarbat unleashes those powerful sound waves to knock out any Zobos and ensure absolute peace. Now if only [[Snoozebo]] didn't make so much noise..."
         },
         {
           "name": "Umbraveil",
@@ -4401,16 +4627,28 @@
         },
         {
           "name": "Sonarbat",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Sonarbat.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Sonarbat.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Sonarbat",
           "evolvesTo": "Umbraveil",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Marathon Party (use skateboard x6000) or Fishing Contest (Use Fishing Rod x6000).",
+            "In Horde Invasion, upgrade Sonarbat to Lvl 7 or above for a total of 5 times."
+          ],
+          "skills": [
+            {
+              "name": "Sonar Power",
+              "description": "Inflicts Perfectly Scouted and Bat: Fragile on enemies over a wide area. When Perfectly Scouted expires, affected enemies take damage.",
+              "types": [
+                "Fragile"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "At night, when the Tatari are fast asleep, Sonarbat unleashes those powerful sound waves to knock out any Zobos and ensure absolute peace. Now if only [[Snoozebo]] didn't make so much noise..."
         },
         {
           "name": "Umbraveil",
