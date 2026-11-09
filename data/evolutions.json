@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-02T15:22:17.643Z",
+  "updatedAt": "2026-11-09T15:49:05.387Z",
   "source": "https://clashofcritters.wiki.gg",
   "lineCount": 53,
   "lines": [
@@ -649,16 +649,29 @@
         },
         {
           "name": "Dreadclaw",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Dreadclaw.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Dreadclaw.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Dreadclaw",
           "evolvesTo": "Cribking",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Play Fishing Contest (use Fishing Rod x6,000) or Zobo Shooter (use Bullet Coin x600,000).",
+            "Obtain 50 more Tatari Wishboxes."
+          ],
+          "skills": [
+            {
+              "name": "Clawstorm",
+              "description": "Swings claw to deal AoE damage and inflict Shredded. Gains ATK Boost when healed.",
+              "types": [
+                "AoE",
+                "ATK Boost"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Once a plain gray crab, Dreadclaw's vivid colors actually came from consumed pollutants. Every so often, those bright claws make an appearance, along with a grip strong enough to prove a point. After all, in the wild, beauty needs strength to back it up."
         },
         {
           "name": "Cribking",
@@ -1981,7 +1994,7 @@
       "type": "Grass",
       "role": "DPS",
       "rarity": "Purple",
-      "aura": "Grass",
+      "aura": null,
       "stages": [
         {
           "name": "Lollama",
@@ -2035,27 +2048,16 @@
         },
         {
           "name": "Blechlama",
-          "rarity": "Rainbow",
+          "rarity": null,
           "image": "Blechlama.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Blechlama.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Blechlama",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Drool Doozy",
-              "description": "Shoots small globs of spit at single enemies to deal multiple instances of damage, or a large glob at enemy crowds to deal small AoE damage and inflict Blind. Also creates a Slow Zone. Blechlama carries Aura: Grass whenever on the field.",
-              "types": [
-                "AoE",
-                "Blind",
-                "Slow",
-                "HP Boost"
-              ]
-            }
-          ],
-          "aura": "Grass",
-          "description": "All that overgrown fur is home to a thriving micro ecosystem. Don't shy away when Blechlama charges at you carrying the raw, powerful scent of nature-embrace the call of the untamed wild!"
+          "skills": [],
+          "aura": null,
+          "description": null
         }
       ]
     },
@@ -2821,16 +2823,29 @@
         },
         {
           "name": "Seaswirl",
-          "rarity": null,
+          "rarity": "Red",
           "image": "Seaswirl.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Seaswirl.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Seaswirl",
           "evolvesTo": "Sealord",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
+          "starsRequired": 36,
+          "trials": [
+            "Feed this Tatari to B quality.",
+            "Shoot 40,000 pinballs.",
+            "Play Zobo Shooter (use x1,200,000 bullet coins) or Fishing Contest (use x6000 fishing rods)."
+          ],
+          "skills": [
+            {
+              "name": "Splash Volley",
+              "description": "Launches 2 bouncing balls that ricochet and inflict Weak.",
+              "types": [
+                "Chain",
+                "Weaken"
+              ]
+            }
+          ],
           "aura": null,
-          "description": null
+          "description": "Two balls mean double the difficulty. Seaswirl is fully absorbed in an extravagant self-choreographer splash theater... and yes, Seaswirl will get upset if nobody claps."
         },
         {
           "name": "Sealord",
@@ -3541,31 +3556,21 @@
       "id": "Taptail",
       "type": "Rock",
       "role": "DPS",
-      "rarity": "Purple",
+      "rarity": null,
       "aura": "Rock",
       "stages": [
         {
           "name": "Taptail",
-          "rarity": "Purple",
+          "rarity": null,
           "image": "Taptail.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Taptail.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Taptail",
           "evolvesTo": "Rattlecoil",
-          "starsRequired": 6,
-          "trials": [
-            "Kill 300 Zobos while clearing stages."
-          ],
-          "skills": [
-            {
-              "name": "Karmic Pistol",
-              "description": "Slowly fires a few sound waves, then rapidly fires several.",
-              "types": [
-                "AoE"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Tapping the head with a tail mallet is a sure way to accumulate karma and earn forgiveness. Or so Taptail firmly believes, after stealing another Tatari's lunch at least."
+          "description": null
         },
         {
           "name": "Rattlecoil",
