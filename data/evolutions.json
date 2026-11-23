@@ -1,7 +1,7 @@
 {
-  "updatedAt": "2026-11-16T15:26:06.070Z",
+  "updatedAt": "2026-11-23T17:50:04.731Z",
   "source": "https://clashofcritters.wiki.gg",
-  "lineCount": 55,
+  "lineCount": 53,
   "lines": [
     {
       "id": "Ashlarva",
@@ -245,30 +245,16 @@
         },
         {
           "name": "Solaflora",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Solaflora.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Solaflora.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Solaflora",
           "evolvesTo": "Heliabloom",
-          "starsRequired": 36,
-          "trials": [
-            "Feed this Tatari to B quality.",
-            "Shoot 45,000 pinballs.",
-            "Purchase any 20 buildings. Bring your Camp to life!"
-          ],
-          "skills": [
-            {
-              "name": "Solar Seeds",
-              "description": "Shines down sunlight, healing allies and granting Sunshine: ATK & DEF Boost. Also attacks with seeds, providing extra sunlight on hit.",
-              "types": [
-                "Heal",
-                "ATK Boost",
-                "DEF Boost"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "As a plant, living in the ocean was never an option. But with those leaves transformed into a surfboard, Solaflora can make waves anywhere."
+          "description": null
         },
         {
           "name": "Heliabloom",
@@ -663,29 +649,16 @@
         },
         {
           "name": "Dreadclaw",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Dreadclaw.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Dreadclaw.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Dreadclaw",
           "evolvesTo": "Cribking",
-          "starsRequired": 36,
-          "trials": [
-            "Feed this Tatari to B quality.",
-            "Play Fishing Contest (use Fishing Rod x6,000) or Zobo Shooter (use Bullet Coin x600,000).",
-            "Obtain 50 more Tatari Wishboxes."
-          ],
-          "skills": [
-            {
-              "name": "Clawstorm",
-              "description": "Swings claw to deal AoE damage and inflict Shredded. Gains ATK Boost when healed.",
-              "types": [
-                "AoE",
-                "ATK Boost"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Once a plain gray crab, Dreadclaw's vivid colors actually came from consumed pollutants. Every so often, those bright claws make an appearance, along with a grip strong enough to prove a point. After all, in the wild, beauty needs strength to back it up."
+          "description": null
         },
         {
           "name": "Cribking",
@@ -1007,77 +980,6 @@
           "skills": [],
           "aura": null,
           "description": null
-        }
-      ]
-    },
-    {
-      "id": "Dumbopus",
-      "type": "Water",
-      "role": "DPS",
-      "rarity": null,
-      "aura": "Water",
-      "stages": [
-        {
-          "name": "Dumbopus",
-          "rarity": null,
-          "image": "Dumbopus.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Dumbopus.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Dumbopus",
-          "evolvesTo": "Dazopus",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
-        },
-        {
-          "name": "Dazopus",
-          "rarity": null,
-          "image": "Dazopus.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Dazopus.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Dazopus",
-          "evolvesTo": "Fishopus",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
-        },
-        {
-          "name": "Fishopus",
-          "rarity": null,
-          "image": "Fishopus.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Fishopus.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Fishopus",
-          "evolvesTo": "Lordopus",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
-        },
-        {
-          "name": "Lordopus",
-          "rarity": "Rainbow",
-          "image": "Lordopus.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Lordopus.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Lordopus",
-          "evolvesTo": null,
-          "starsRequired": null,
-          "trials": [],
-          "skills": [
-            {
-              "name": "The King's Fish",
-              "description": "Launches a water orb and sometimes a large water orb that deals small AoE damage. Can summon an Octobuddy that deals large AoE damage when knocked down. Lordopus carries Aura: Water, recovering HP for all allies whenever on the field.",
-              "types": [
-                "AoE",
-                "Summon",
-                "Heal"
-              ]
-            }
-          ],
-          "aura": "Water",
-          "description": "The king is crowned, and the chaotic tentacles of the past are now the throne of the sovereign. With just one thought, Lordopus can command the ebb and flow of all the seas."
         }
       ]
     },
@@ -1406,29 +1308,16 @@
         },
         {
           "name": "Frugagon",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Frugagon.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Frugagon.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Frugagon",
           "evolvesTo": "Frugantuan",
-          "starsRequired": 24,
-          "trials": [
-            "Feed this Tatari to B quality.",
-            "Shoot 45,000 pinballs.",
-            "Obtain 30 more Tatari Wishboxes."
-          ],
-          "skills": [
-            {
-              "name": "Bramble Bomb",
-              "description": "Launches a prickly pink fruit that explodes often, dealing AoE damage and inflicting Slow.",
-              "types": [
-                "AoE",
-                "Slow"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "'Always keep an eye out for whether Frugagon is eavesdropping on your conversations. Don't let that face fool you. The curiosity is frankly absurd.' ---Tatari Observation Diary"
+          "description": null
         },
         {
           "name": "Frugantuan",
@@ -2288,29 +2177,16 @@
         },
         {
           "name": "Serrabloom",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Serrabloom.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Serrabloom.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Serrabloom",
           "evolvesTo": "Orchitoria",
-          "starsRequired": 36,
-          "trials": [
-            "Feed this Tatari to B quality.",
-            "Shoot 45,000 pinballs.",
-            "Own 24-star Grass Tatari x3."
-          ],
-          "skills": [
-            {
-              "name": "Mantis Waltz",
-              "description": "Strikes continuously, dealing AoE damage and inflicting Fragile.",
-              "types": [
-                "AoE",
-                "Fragile"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Every slash lands like a pair of pruning shears trimming flower branches. By the time those blades pull back, the unruly twigs are already gone... Why has nobody filmed the famous Mantis Waltz yet?"
+          "description": null
         },
         {
           "name": "Orchitoria",
@@ -2864,30 +2740,16 @@
         },
         {
           "name": "Terracrawler",
-          "rarity": "Red",
+          "rarity": null,
           "image": "Terracrawler.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Terracrawler.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Terracrawler",
           "evolvesTo": "Weaverfang",
-          "starsRequired": 36,
-          "trials": [
-            "Raise this Tatari to B quality.",
-            "Shoot 45,000 pinballs.",
-            "Own 24-Star Grass Tatari x4."
-          ],
-          "skills": [
-            {
-              "name": "Sylvan Shield",
-              "description": "Shoots green bubbles to deal AoE damage. If a Liquid Shield is not active, stop attacking and quickly generates one. When the shield breaks, inflicts Stun on nearby enemies.",
-              "types": [
-                "AoE",
-                "Shield",
-                "Stun"
-              ]
-            }
-          ],
+          "starsRequired": null,
+          "trials": [],
+          "skills": [],
           "aura": null,
-          "description": "Tiny butterflies have moved into the thriving miniature forest on Terracrawler's back, and even flowers have appeared as a result. The world must be getting better. With so many trainers out there giving their all, how could it not?"
+          "description": null
         },
         {
           "name": "Weaverfang",
@@ -3097,50 +2959,6 @@
       ]
     },
     {
-      "id": "Shellshy",
-      "type": "Water",
-      "role": "Guardian",
-      "rarity": null,
-      "aura": null,
-      "stages": [
-        {
-          "name": "Shellshy",
-          "rarity": null,
-          "image": "Shellshy.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Shellshy.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Shellshy",
-          "evolvesTo": "Boldclaw",
-          "starsRequired": null,
-          "trials": [],
-          "skills": [],
-          "aura": null,
-          "description": null
-        },
-        {
-          "name": "Boldclaw",
-          "rarity": "Purple",
-          "image": "Boldclaw.png",
-          "imageUrl": "https://clashofcritters.wiki.gg/images/Boldclaw.png",
-          "wiki": "https://clashofcritters.wiki.gg/wiki/Boldclaw",
-          "evolvesTo": null,
-          "starsRequired": null,
-          "trials": [],
-          "skills": [
-            {
-              "name": "Bubble Blast",
-              "description": "Fires a powerful wave of bubbles, dealing AoE damage and inflicting Slow.",
-              "types": [
-                "AoE",
-                "Slow"
-              ]
-            }
-          ],
-          "aura": null,
-          "description": "To evolve into Boldclaw, one must manage to get an extra large from Shellbucks without spending a dime."
-        }
-      ]
-    },
-    {
       "id": "Shrimpyro",
       "type": "Fire",
       "role": "DPS",
@@ -3224,7 +3042,7 @@
       "type": "Water",
       "role": "Specialist",
       "rarity": "Purple",
-      "aura": "Water",
+      "aura": null,
       "stages": [
         {
           "name": "Skinklet",
@@ -3302,26 +3120,16 @@
         },
         {
           "name": "Hychroma",
-          "rarity": "Rainbow",
+          "rarity": null,
           "image": "Hychroma.png",
           "imageUrl": "https://clashofcritters.wiki.gg/images/Hychroma.png",
           "wiki": "https://clashofcritters.wiki.gg/wiki/Hychroma",
           "evolvesTo": null,
           "starsRequired": null,
           "trials": [],
-          "skills": [
-            {
-              "name": "Vortex",
-              "description": "Creates a vortex to deal AoE damage. Becomes Invisible after taking certain amount of damage. While Invisible, gains ATK Range and reduced cooldowns. Hychroma carries Aura: Water, recovering HP for all allies whenever on the field.",
-              "types": [
-                "AoE",
-                "Invisible",
-                "Heal"
-              ]
-            }
-          ],
-          "aura": "Water",
-          "description": "Has shattered boundaries of existence and can summon millions of water blades at will to break any defense. Hychroma still shuns attention but no longer fears being ignored. After all, the truly powerful need no spotlight."
+          "skills": [],
+          "aura": null,
+          "description": null
         }
       ]
     },
